@@ -1,0 +1,1148 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python随身听-2020-10-02-技术精选 &#8212; Python随身听官方网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Python随身听-2020-10-03-技术精选" href="2020-10-03.html" />
+    <link rel="prev" title="Python随身听-2020-10-01-技术精选" href="2020-10-01.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo-pythonradio.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python随身听官方网站</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   欢迎来到Python随身听【音频直接听←】
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="content.html">
+   →技术精选
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-01.html">
+     Python随身听-2020-10-01-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python随身听-2020-10-02-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-03.html">
+     Python随身听-2020-10-03-技术精选
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/2020-10-02.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-huggingface-datasets">
+   🤩Python随身听-技术精选： /huggingface/datasets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-anandpawara-real-time-image-animation">
+   🤩Python随身听-技术精选： /anandpawara/Real_Time_Image_Animation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#real-time-image-animation">
+   Real time Image Animation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#steps-to-setup">
+   Steps to setup
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1-create-virtual-environment">
+     Step 1: Create virtual environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2-activate-virtual-environment">
+     Step 2: Activate virtual environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3-install-required-modules">
+     Step 3 : Install required modules
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-4-download-cascade-file-weights-and-model-and-save-in-folder-named-extract">
+     Step 4 : Download cascade file ,weights and model and save in folder named extract
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-mingrammer-diagrams">
+   🤩Python随身听-技术精选： /mingrammer/diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diagrams">
+   Diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-nvlabs-imaginaire">
+   🤩Python随身听-技术精选： /NVlabs/imaginaire
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#imaginaire">
+   Imaginaire
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#docs-license-installation-model-zoo">
+     Docs |
+     <span class="xref myst">
+      License
+     </span>
+     |
+     <span class="xref myst">
+      Installation
+     </span>
+     |
+     <span class="xref myst">
+      Model Zoo
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#license">
+     License
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-inside">
+     What’s inside?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#supervised-image-to-image-translation">
+       Supervised Image-to-Image Translation
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-openmined-pysyft">
+   🤩Python随身听-技术精选： /OpenMined/PySyft
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pysyft-in-detail">
+     PySyft in Detail
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-donnemartin-system-design-primer">
+   🤩Python随身听-技术精选： /donnemartin/system-design-primer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-ansible-ansible">
+   🤩Python随身听-技术精选： /ansible/ansible
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-mytechnotalent-python-for-kids">
+   🤩Python随身听-技术精选： /mytechnotalent/Python-For-Kids
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-for-kids">
+   Python For Kids
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lesson-1-python-for-kids-part-1-goals">
+     Lesson 1: Python For Kids (Part 1: Goals)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lesson-2-python-for-kids-part-2-install-mu-ide">
+     Lesson 2: Python For Kids (Part 2: Install Mu IDE)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lesson-3-python-for-kids-part-3-hello-world">
+     Lesson 3: Python For Kids (Part 3: “Hello World”)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-paytmlabs-nerve">
+   🤩Python随身听-技术精选： /PaytmLabs/nerve
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#network-exploitation-reconnaissance-vulnerability-engine-n-e-r-v-e">
+   Network Exploitation, Reconnaissance &amp; Vulnerability Engine (N.E.R.V.E)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#continuous-security">
+   Continuous Security
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-pitt-csc-summer2021-internships">
+   🤩Python随身听-技术精选： /Pitt-CSC/Summer2021-Internships
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summer-2021-internships">
+   Summer 2021 Internships ☀️👩‍💻
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-list">
+     The List 👔
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-isocpp-cppcoreguidelines">
+   🤩Python随身听-技术精选： /isocpp/CppCoreGuidelines
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-started">
+     Getting started
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-domokane-financepy">
+   🤩Python随身听-技术精选： /domokane/FinancePy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-start-guide">
+   Quick Start Guide
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-financepy-in-a-jupyter-notebook">
+   Using FinancePy in a Jupyter Notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-ciphey-ciphey">
+   🤩Python随身听-技术精选： /Ciphey/Ciphey
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-vinayak-mehta-present">
+   🤩Python随身听-技术精选： /vinayak-mehta/present
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#present">
+   present
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-great-expectations-great-expectations">
+   🤩Python随身听-技术精选： /great-expectations/great_expectations
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-2020-10-02">
+<h1>Python随身听-2020-10-02-技术精选<a class="headerlink" href="#python-2020-10-02" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>致读者：亲爱的「Python随身听」的观众们，这是由DE8UG的人工非智能给你带来的新的一期技术精选。<br />
+主要为编程初学者，开发工程师，算法工程师，数据分析师，运维，测试，运营，产品等各个岗位的Python爱好者带来Python世界的流行趋势，前沿技术。<br />
+你可以挑选自己喜欢的项目尽情玩耍，任何想法欢迎留言讨论。<br />
+本文的结构和内容会经常更新，每天10：24分左右发布，感谢订阅🆙和收藏☆。<br />
+（点击原文或到pythonradio.online网站查看可点击的文档链接）</p>
+</div></blockquote>
+<div class="section" id="python-huggingface-datasets">
+<h2>🤩Python随身听-技术精选： /huggingface/datasets<a class="headerlink" href="#python-huggingface-datasets" title="Permalink to this headline">¶</a></h2>
+<p>👉🤗 Fast, efficient, open-access datasets and evaluation metrics for Natural Language Processing and more in PyTorch, TensorFlow, NumPy and Pandas</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">nlp,datasets,metrics,evaluation,pytorch,tensorflow,pandas,numpy,natural-language-processing</span></code></p>
+<p>⭐️STARS：3526, 今日上升数↑:132</p>
+<p>👉README：</p>
+<p align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/huggingface/datasets/master/docs/source/imgs/datasets_logo_name.jpg" width="400"/>
+    <br>
+<p>
+<p align="center">
+    <a href="https://circleci.com/gh/huggingface/datasets">
+        <img alt="Build" src="https://img.shields.io/circleci/build/github/huggingface/datasets/master">
+    </a>
+    <a href="https://github.com/huggingface/datasets/blob/master/LICENSE">
+        <img alt="GitHub" src="https://img.shields.io/github/license/huggingface/datasets.svg?color=blue">
+    </a>
+    <a href="https://huggingface.co/docs/datasets/index.html">
+        <img alt="Documentation" src="https://img.shields.io/website/http/huggingface.co/docs/datasets/index.html.svg?down_color=red&down_message=offline&up_message=online">
+    </a>
+    <a href="https://github.com/huggingface/datasets/releases">
+        <img alt="GitHub release" src="https://img.shields.io/github/release/huggingface/datasets.svg">
+    </a>
+    <a href="https://huggingface.co/datasets/...
+<p>地址：<a class="reference external" href="https://github.com/huggingface/datasets">https://github.com/huggingface/datasets</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-anandpawara-real-time-image-animation">
+<h2>🤩Python随身听-技术精选： /anandpawara/Real_Time_Image_Animation<a class="headerlink" href="#python-anandpawara-real-time-image-animation" title="Permalink to this headline">¶</a></h2>
+<p>👉The Project is real time application in opencv using first order model</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：2269, 今日上升数↑:125</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="real-time-image-animation">
+<h2>Real time Image Animation<a class="headerlink" href="#real-time-image-animation" title="Permalink to this headline">¶</a></h2>
+<p>The Project is real time application in opencv using first order model</p>
+</div>
+<div class="section" id="steps-to-setup">
+<h2>Steps to setup<a class="headerlink" href="#steps-to-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1-create-virtual-environment">
+<h3>Step 1: Create virtual environment<a class="headerlink" href="#step-1-create-virtual-environment" title="Permalink to this headline">¶</a></h3>
+<p><strong>Python version</strong> : python v3.7.3 or higher</p>
+<p><strong>create virual environment</strong> : <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">virtualenv</span></code></p>
+<p><strong>activate virtual environment</strong> : <code class="docutils literal notranslate"><span class="pre">virtualenv</span> <span class="pre">env</span></code></p>
+</div>
+<div class="section" id="step-2-activate-virtual-environment">
+<h3>Step 2: Activate virtual environment<a class="headerlink" href="#step-2-activate-virtual-environment" title="Permalink to this headline">¶</a></h3>
+<p><strong>For windows</strong> : <code class="docutils literal notranslate"><span class="pre">env/Script/activate</span></code></p>
+<p><strong>For Linux</strong> : <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">env/bin/activate</span></code></p>
+</div>
+<div class="section" id="step-3-install-required-modules">
+<h3>Step 3 : Install required modules<a class="headerlink" href="#step-3-install-required-modules" title="Permalink to this headline">¶</a></h3>
+<p><strong>Install modules</strong> : <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p>
+<p><strong>Install pytorch and torchvision</strong> : <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">torch===1.0.0</span> <span class="pre">torchvision===0.2.1</span> <span class="pre">-f</span> <span class="pre">https://download.pytorch.org/whl/cu100/torch_stable.html</span> </code></p>
+</div>
+<div class="section" id="step-4-download-cascade-file-weights-and-model-and-save-in-folder-named-extract">
+<h3>Step 4 : Download cascade file ,weights and model and save in folder named extract<a class="headerlink" href="#step-4-download-cascade-file-weights-and-model-and-save-in-folder-named-extract" title="Permalink to this headline">¶</a></h3>
+<p>The file is also availible via direct link on Google’s Drive:
+https://drive.google.com/uc?id=1wCzJP1XJNB04vEORZvPjNz6drkXm5AUK</p>
+<p><strong>On Linux machine</strong> : <code class="docutils literal notranslate"><span class="pre">unzip</span> <span class="pre">checkpoints.zip</span></code></p>
+<p>If on windows platfrom unzip checkpoints.zi…</p>
+<p>地址：<a class="reference external" href="https://github.com/anandpawara/Real_Time_Image_Animation">https://github.com/anandpawara/Real_Time_Image_Animation</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-mingrammer-diagrams">
+<h2>🤩Python随身听-技术精选： /mingrammer/diagrams<a class="headerlink" href="#python-mingrammer-diagrams" title="Permalink to this headline">¶</a></h2>
+<p>👉:art: Diagram as Code for prototyping cloud system architectures</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">diagram,diagram-as-code,drawing,architecture,prototyping</span></code></p>
+<p>⭐️STARS：9583, 今日上升数↑:181</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="diagrams">
+<h2>Diagrams<a class="headerlink" href="#diagrams" title="Permalink to this headline">¶</a></h2>
+<p><a href="https://www.buymeacoffee.com/mingrammer" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a></p>
+<p><strong>Diagram as Code</strong>.</p>
+<p>Diagrams lets you draw the cloud system architecture <strong>in Python code</strong>. It was born for <strong>prototyping</strong> a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports main major providers including: <code class="docutils literal notranslate"><span class="pre">AWS</span></code>, <code class="docutils literal notranslate"><span class="pre">Azure</span></code>, <code class="docutils literal notranslate"><span class="pre">GCP</span></code>, <code class="docutils literal notranslate"><span class="pre">Kubernetes</span></code>, <code class="docutils literal notranslate"><span class="pre">Alibaba</span> <span class="pre">Cloud</span></code>, <code class="docutils literal notranslate"><span class="pre">Oracle</span> <span class="pre">Cloud</span></code> etc… It also supports <code class="docutils literal notranslate"><span class="pre">On-Premise</span></code> nodes, <code class="docutils literal notranslate"><span class="pre">SaaS</span></code> and major <code class="docutils literal notranslate"><span class="pre">Programming</span></code> frameworks and languages.</p>
+<p><strong>Diagram as Code</strong> also allows you to <strong>track</strong> the architecture diagram changes in any <strong>version control</strong> system.</p>
+<blockquote>
+<div><p>NOTE: It does not control any actual cloud resources nor does it generate cloud formation or terr…</p>
+</div></blockquote>
+<p>地址：<a class="reference external" href="https://github.com/mingrammer/diagrams">https://github.com/mingrammer/diagrams</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-nvlabs-imaginaire">
+<h2>🤩Python随身听-技术精选： /NVlabs/imaginaire<a class="headerlink" href="#python-nvlabs-imaginaire" title="Permalink to this headline">¶</a></h2>
+<p>👉NVIDIA PyTorch GAN library with distributed and mixed precision support</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：643, 今日上升数↑:125</p>
+<p>👉README：</p>
+<img src="imaginaire_logo.svg" alt="imaginaire_logo.svg" height="360"/>
+</div>
+<div class="section" id="imaginaire">
+<h2>Imaginaire<a class="headerlink" href="#imaginaire" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="docs-license-installation-model-zoo">
+<h3><a class="reference external" href="http://imaginaire.cc/docs">Docs</a> | <span class="xref myst">License</span> | <span class="xref myst">Installation</span> | <span class="xref myst">Model Zoo</span><a class="headerlink" href="#docs-license-installation-model-zoo" title="Permalink to this headline">¶</a></h3>
+<p>Imaginaire is a <a class="reference external" href="https://pytorch.org/">pytorch</a> library that contains
+optimized implementation of several image and video synthesis methods developed at <a class="reference external" href="https://www.nvidia.com/en-us/">NVIDIA</a>.</p>
+</div>
+<div class="section" id="license">
+<h3>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
+<p>Imaginaire is released under <span class="xref myst">NVIDIA Software license</span>.
+For commercial use, please consult <span class="xref myst">researchinquiries&#64;nvidia.com</span></p>
+</div>
+<div class="section" id="what-s-inside">
+<h3>What’s inside?<a class="headerlink" href="#what-s-inside" title="Permalink to this headline">¶</a></h3>
+<p>We have a tutorial for each model. Click on the model name, and your browser should take you to the tutorial page for the project.</p>
+<div class="section" id="supervised-image-to-image-translation">
+<h4>Supervised Image-to-Image Translation<a class="headerlink" href="#supervised-image-to-image-translation" title="Permalink to this headline">¶</a></h4>
+<p>|Algorithm Name                               | Feature                                                                                                         | Publication                                                   |
+|:——————…</p>
+<p>地址：<a class="reference external" href="https://github.com/NVlabs/imaginaire">https://github.com/NVlabs/imaginaire</a></p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-openmined-pysyft">
+<h2>🤩Python随身听-技术精选： /OpenMined/PySyft<a class="headerlink" href="#python-openmined-pysyft" title="Permalink to this headline">¶</a></h2>
+<p>👉A library for answering questions using data you cannot see</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">deep-learning,secure-computation,pytorch,privacy,cryptography,python,syft,federated-learning</span></code></p>
+<p>⭐️STARS：6288, 今日上升数↑:44</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>PySyft is a Python library for secure and private Deep Learning. PySyft decouples private data from model training, using
+<a class="reference external" href="https://ai.googleblog.com/2017/04/federated-learning-collaborative.html">Federated Learning</a>,
+<a class="reference external" href="https://en.wikipedia.org/wiki/Differential_privacy">Differential Privacy</a>,
+and Encrypted Computation (like
+<a class="reference external" href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Multi-Party Computation (MPC)</a>
+and  <a class="reference external" href="https://en.wikipedia.org/wiki/Homomorphic_encryption">Homomorphic Encryption (HE)</a>)
+within the main Deep Learning frameworks like PyTorch and TensorFlow. Join the movement on
+<a class="reference external" href="http://slack.openmined.org/">Slack</a>.</p>
+<div class="section" id="pysyft-in-detail">
+<h3>PySyft in Detail<a class="headerlink" href="#pysyft-in-detail" title="Permalink to this headline">¶</a></h3>
+<p>A more detailed explanation of PySyft can be found in the
+<a class="reference external" href="https://arxiv.org/abs/1811.04017">white paper on Arxiv</a></p>
+<p>PySyft has also been explained in videos on YouTube:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=NJBBE_SN90A">Introduction to Privacy Preserving AI using PySyft by &#64;iamtrask</a></p></li>
+<li><p>[Introduction to PySyft codebase by &#64;andreiliphd](https://…</p></li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/OpenMined/PySyft">https://github.com/OpenMined/PySyft</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-donnemartin-system-design-primer">
+<h2>🤩Python随身听-技术精选： /donnemartin/system-design-primer<a class="headerlink" href="#python-donnemartin-system-design-primer" title="Permalink to this headline">¶</a></h2>
+<p>👉Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">programming,development,design,design-system,system,design-patterns,web,web-application,webapp,python,interview,interview-questions,interview-practice</span></code></p>
+<p>⭐️STARS：108328, 今日上升数↑:102</p>
+<p>👉README：</p>
+<p>*<span class="xref myst">English</span> ∙ <span class="xref myst">日本語</span> ∙ <span class="xref myst">简体中文</span> ∙ <span class="xref myst">繁體中文</span> | <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/170">العَرَبِيَّة‎</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/220">বাংলা</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/40">Português do Brasil</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/186">Deutsch</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/130">ελληνικά</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/272">עברית</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/104">Italiano</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/102">한국어</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/110">فارسی</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/68">Polski</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/87">русский язык</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/136">Español</a> ∙ […</p>
+<p>地址：<a class="reference external" href="https://github.com/donnemartin/system-design-primer">https://github.com/donnemartin/system-design-primer</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-ansible-ansible">
+<h2>🤩Python随身听-技术精选： /ansible/ansible<a class="headerlink" href="#python-ansible-ansible" title="Permalink to this headline">¶</a></h2>
+<p>👉Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,ansible</span></code></p>
+<p>⭐️STARS：44945, 今日上升数↑:18</p>
+<p>👉README：</p>
+<p>|PyPI version| |Docs badge| |Chat badge| |Build Status| |Code Of Conduct| |Mailing Lists| |License| |CII Best Practices|</p>
+<hr class="docutils" />
+<p>Ansible</p>
+<hr class="docutils" />
+<p>Ansible is a radically simple IT automation system. It handles
+configuration management, application deployment, cloud provisioning,
+ad-hoc task execution, network automation, and multi-node orchestration. Ansible makes complex
+changes like zero-downtime rolling updates with load balancers easy. More information on <code class="docutils literal notranslate"><span class="pre">the</span> <span class="pre">Ansible</span> <span class="pre">website</span> <span class="pre">&lt;https://ansible.com/&gt;</span></code>_.</p>
+<p>Design Principles</p>
+<ul class="simple">
+<li><p>Have a dead-simple setup process with a minimal learning curve.</p></li>
+<li><p>Manage machines very quickly and in parallel.</p></li>
+<li><p>Avoid custom-agents and additional open ports, be agentless by
+leveraging the existing SSH daemon.</p></li>
+<li><p>Describe infrastructure in a language that is both machine and human
+friendly.</p></li>
+<li><p>Focus on security and easy auditability/review/rewriting of content.</p></li>
+<li><p>Manage new remote machines instantly, without bootstrapping any
+software.</p></li>
+<li><p>Allow module development in any …</p></li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/ansible/ansible">https://github.com/ansible/ansible</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-mytechnotalent-python-for-kids">
+<h2>🤩Python随身听-技术精选： /mytechnotalent/Python-For-Kids<a class="headerlink" href="#python-mytechnotalent-python-for-kids" title="Permalink to this headline">¶</a></h2>
+<p>👉A comprehensive and FREE Online Python Development course FOR KIDS utilizing an official BBC micro:bit Development Board going step-by-step into the world of Python for microcontrollers.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">kids,kidscancode,python,microbit,pythonlearning,pythonforeverybody,pythonforkids,stem,mu,micropython,pythonforbeginner,kids-utilizing,tutorial,linkedin,article,microcontrollers,microcontroller,step-lessons,educator,educators</span></code></p>
+<p>⭐️STARS：382, 今日上升数↑:53</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="python-for-kids">
+<h2>Python For Kids<a class="headerlink" href="#python-for-kids" title="Permalink to this headline">¶</a></h2>
+<p>A comprehensive and FREE Online Python Development course FOR KIDS utilizing an official BBC micro:bit Development Board going step-by-step into the world of Python for microcontrollers.</p>
+<div class="section" id="lesson-1-python-for-kids-part-1-goals">
+<h3>Lesson 1: Python For Kids (Part 1: Goals)<a class="headerlink" href="#lesson-1-python-for-kids-part-1-goals" title="Permalink to this headline">¶</a></h3>
+<p>This tutorial will begin with the basic concepts of why kids should learn to program in Python.</p>
+<p>-&gt; Click <a class="reference external" href="https://www.linkedin.com/pulse/kids-python-part-1-goals-kevin-thomas/">HERE</a> to read the article on LinkedIn.</p>
+</div>
+<div class="section" id="lesson-2-python-for-kids-part-2-install-mu-ide">
+<h3>Lesson 2: Python For Kids (Part 2: Install Mu IDE)<a class="headerlink" href="#lesson-2-python-for-kids-part-2-install-mu-ide" title="Permalink to this headline">¶</a></h3>
+<p>This tutorial will step-by-step help you get the Mu integrated development environment set up for you and your child to begin developing.</p>
+<p>-&gt; Click <a class="reference external" href="https://www.linkedin.com/pulse/python-kids-part-2-install-mu-ide-kevin-thomas/">HERE</a> to read the article on LinkedIn.</p>
+</div>
+<div class="section" id="lesson-3-python-for-kids-part-3-hello-world">
+<h3>Lesson 3: Python For Kids (Part 3: “Hello World”)<a class="headerlink" href="#lesson-3-python-for-kids-part-3-hello-world" title="Permalink to this headline">¶</a></h3>
+<p>This tutorial will step-by-step code our first program to have our little microcontroller say hello to the world!</p>
+<p>-&gt; Click [HERE](https://www.linkedin.com/pulse/python-kids-…</p>
+<p>地址：<a class="reference external" href="https://github.com/mytechnotalent/Python-For-Kids">https://github.com/mytechnotalent/Python-For-Kids</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-paytmlabs-nerve">
+<h2>🤩Python随身听-技术精选： /PaytmLabs/nerve<a class="headerlink" href="#python-paytmlabs-nerve" title="Permalink to this headline">¶</a></h2>
+<p>👉NERVE Continuous Vulnerability Scanner</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">security,security-tools,security-testing,vulnerability-scanners,vulnerability-assessment,vulnerability-detection</span></code></p>
+<p>⭐️STARS：63, 今日上升数↑:12</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="network-exploitation-reconnaissance-vulnerability-engine-n-e-r-v-e">
+<h2>Network Exploitation, Reconnaissance &amp; Vulnerability Engine (N.E.R.V.E)<a class="headerlink" href="#network-exploitation-reconnaissance-vulnerability-engine-n-e-r-v-e" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="#Continuous-Security">Continuous Security</a></p></li>
+<li><p><span class="xref myst">About NERVE</span></p>
+<ul>
+<li><p><a class="reference external" href="#about-Nerve">What is NERVE</a></p></li>
+<li><p><a class="reference external" href="#features">Features</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#prerequisites">Prerequisites</a></p></li>
+<li><p><a class="reference external" href="#installation">Installation</a></p>
+<ul>
+<li><p><a class="reference external" href="#Deployment-Recommendation">Deployment Recommendations</a></p></li>
+<li><p><a class="reference external" href="#docker">Installation - Docker</a></p></li>
+<li><p><a class="reference external" href="#server">Installation - Bare Metal</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#security">Security</a></p></li>
+<li><p><a class="reference external" href="#usage">Usage</a></p></li>
+<li><p><a class="reference external" href="#license">License</a></p></li>
+<li><p><a class="reference external" href="#screenshots">Screenshots</a></p></li>
+</ul>
+</div>
+<div class="section" id="continuous-security">
+<h2>Continuous Security<a class="headerlink" href="#continuous-security" title="Permalink to this headline">¶</a></h2>
+<p>We believe security scanning should be done continuously. Not daily, weekly, monthly, or quarterly.</p>
+<p>The benefit of running security scanning contiuously can be any of the following:</p>
+<ul class="simple">
+<li><p>You have a dynamic environment where infrastructure gets created every minute / hour / etc.</p></li>
+<li><p>You want to be the first to catch issues before anyone else</p></li>
+<li><p>You want the ability to respond quicker.</p></li>
+</ul>
+<p>NERVE was created to address this problem. Commercial tools are great, but they are also heavy, …</p>
+<p>地址：<a class="reference external" href="https://github.com/PaytmLabs/nerve">https://github.com/PaytmLabs/nerve</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-pitt-csc-summer2021-internships">
+<h2>🤩Python随身听-技术精选： /Pitt-CSC/Summer2021-Internships<a class="headerlink" href="#python-pitt-csc-summer2021-internships" title="Permalink to this headline">¶</a></h2>
+<p>👉Collection of Summer 2021 tech internships!</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">interview-preparation,internships</span></code></p>
+<p>⭐️STARS：2058, 今日上升数↑:15</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="summer-2021-internships">
+<h2>Summer 2021 Internships ☀️👩‍💻<a class="headerlink" href="#summer-2021-internships" title="Permalink to this headline">¶</a></h2>
+<p>Use this repo to share and keep track of any tech-related internships. For a <a class="reference external" href="https://docs.google.com/spreadsheets/d/1bJq7YQV19TWyzPCBeQi5P4uOm8uiAAm2AHCnVNGRIDg/edit#gid=0">Google Sheet 📝 version of this repo (that remains in sync with this table) click here</a>! For more tips on the internship process check out the <a class="reference external" href="https://www.pittcs.wiki/zero-to-offer">Zero to Offer 📈 program here</a>.</p>
+<p>📫  Want weekly internship postings in your inbox? Join the internship newsletter <a class="reference external" href="https://forms.gle/khRdKEm9AXaFAZg97">here</a>!</p>
+<p>🎓 Check out our New Grad repo <a class="reference external" href="https://github.com/Pitt-CSC/NewGrad-2021">here</a>.</p>
+<p>🤗 <strong>Contribute by submitting a <a class="reference external" href="https://github.com/susam/gitpr#create-pull-request">pull request</a> or <a class="reference external" href="https://bit.ly/3d5O76c">filling out this form</a>!</strong>  🤗</p>
+<div class="section" id="the-list">
+<h3>The List 👔<a class="headerlink" href="#the-list" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Location</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://akunacapital.com/careers?&amp;experience=intern&amp;department=&amp;location=&amp;search_term=#careers">Akuna Capital</a></p></td>
+<td><p>Boston, Chicago, International Locations</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>[Apple]…</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>地址：<a class="reference external" href="https://github.com/Pitt-CSC/Summer2021-Internships">https://github.com/Pitt-CSC/Summer2021-Internships</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-isocpp-cppcoreguidelines">
+<h2>🤩Python随身听-技术精选： /isocpp/CppCoreGuidelines<a class="headerlink" href="#python-isocpp-cppcoreguidelines" title="Permalink to this headline">¶</a></h2>
+<p>👉The C++ Core Guidelines are a set of tried-and-true guidelines, rules, and best practices about coding in C++</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：28680, 今日上升数↑:18</p>
+<p>👉README：</p>
+<blockquote>
+<div><p>“Within C++ is a smaller, simpler, safer language struggling to get out.”
+– <cite>Bjarne Stroustrup</cite></p>
+</div></blockquote>
+<p>The <span class="xref myst">C++ Core Guidelines</span> are a collaborative effort led by Bjarne Stroustrup, much like the C++ language itself. They are the result of many
+person-years of discussion and design across a number of organizations. Their design encourages general applicability and broad adoption but
+they can be freely copied and modified to meet your organization’s needs.</p>
+<div class="section" id="getting-started">
+<h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<p>The guidelines themselves are found at <span class="xref myst">CppCoreGuidelines</span>. The document is in <a class="reference external" href="https://github.github.com/gfm/">GH-flavored MarkDown</a>. It is intentionally kept simple, mostly in ASCII, to allow automatic post-processing such as language translation and reformatting. The editors maintain one
+<a class="reference external" href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">version formatted for browsing</a>. Note that it is manually integrated and can be slightly older than the version in the master branch.</p>
+<p>…</p>
+<p>地址：<a class="reference external" href="https://github.com/isocpp/CppCoreGuidelines">https://github.com/isocpp/CppCoreGuidelines</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-domokane-financepy">
+<h2>🤩Python随身听-技术精选： /domokane/FinancePy<a class="headerlink" href="#python-domokane-financepy" title="Permalink to this headline">¶</a></h2>
+<p>👉A Python Finance Library that focuses on the pricing and risk-management of Financial Derivatives, including fixed-income, equity, FX and credit derivatives.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">risk,pricing,risk-management,asset-allocation,finance,valuation,python,derivatives-pricing,numba,bonds,students,fixed-income,derivatives,investment,currency,credit</span></code></p>
+<p>⭐️STARS：138, 今日上升数↑:15</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="quick-start-guide">
+<h2>Quick Start Guide<a class="headerlink" href="#quick-start-guide" title="Permalink to this headline">¶</a></h2>
+<p>FinancePy can be installed from pip using the command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">financepy</span></code></p>
+<p>To upgrade an existing installation type:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">financepy</span></code></p>
+</div>
+<div class="section" id="using-financepy-in-a-jupyter-notebook">
+<h2>Using FinancePy in a Jupyter Notebook<a class="headerlink" href="#using-financepy-in-a-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<p>Once financepy has been installed, it is easy to get started.</p>
+<p>Just download the project and examine the set of Jupyter Notebooks in the notebooks folder.</p>
+<p>A pdf manual describing all of the functions can be found in the project directory.</p>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>FinancePy is a python-based library that is currently in beta version. It covers the following functionality:</p>
+<ul class="simple">
+<li><p>Valuation and risk models for a wide range of equity, FX, interest rate and credit derivatives.</p></li>
+</ul>
+<p>Although it is written entirely in Python, it can achieve speeds comparable to C++ by using Numba. As a result the user has both the ability to examine the underlying code and the ability to perform pricing and risk at speeds which compare to a library written in C++.</p>
+<p>The target audience for this library includes:</p>
+<ul class="simple">
+<li><p>Students wishing …</p></li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/domokane/FinancePy">https://github.com/domokane/FinancePy</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-ciphey-ciphey">
+<h2>🤩Python随身听-技术精选： /Ciphey/Ciphey<a class="headerlink" href="#python-ciphey-ciphey" title="Permalink to this headline">¶</a></h2>
+<p>👉⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes ⚡</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">decryption,natural-language-processing,cryptography,cipher,artificial-intelligence,ctf-tools,ctf,cpp,python,hacking,pentesting,deep-neural-network,hashes,cyberchef-magic,encryptions,encodings</span></code></p>
+<p>⭐️STARS：4654, 今日上升数↑:32</p>
+<p>👉README：</p>
+<p align="center">
+Translations <br>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/id/README.md>🇮🇩 ID   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/de/README.md>🇩🇪 DE   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/hu/README.md>🇭🇺 HU   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/nl/README.md>🇳🇱 NL   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/pt-br/README.md>🇧🇷 PT-BR   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/ru/README.md>🇷🇺 RU   </a> 
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/fr/README.md>🇫🇷 FR   </a>
+ <br><br>
+➡️ 
+<a href="https://github.com/Ciphey/Ciphey/wiki">Documentation</a> |
+<a href="https://discord.ciphey.online">Discord</a> |
+ <a href="https://github.com/Ciphey/Ciphey/wiki/Installation">Installation Guide</a>
+ ⬅️
+<br>
+  <img src="Pictures_for_README/binoculars.png" alt="Ciphey">
+</p>
+<p align="center">
+  <img alt="GitHub...
+<p>地址：<a class="reference external" href="https://github.com/Ciphey/Ciphey">https://github.com/Ciphey/Ciphey</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-vinayak-mehta-present">
+<h2>🤩Python随身听-技术精选： /vinayak-mehta/present<a class="headerlink" href="#python-vinayak-mehta-present" title="Permalink to this headline">¶</a></h2>
+<p>👉A terminal-based presentation tool with colors and effects.</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：3639, 今日上升数↑:30</p>
+<p>👉README：</p>
+<p align="center">
+   <img src="https://raw.githubusercontent.com/vinayak-mehta/present/master/docs/_static/present.png" width="200">
+</p>
+</div>
+<div class="section" id="present">
+<h2>present<a class="headerlink" href="#present" title="Permalink to this headline">¶</a></h2>
+<p>A terminal-based presentation tool with colors and effects.</p>
+<p align="center">
+   <img src="https://raw.githubusercontent.com/vinayak-mehta/present/master/docs/_static/demo.gif" width="800">
+</p>
+<p>You can also play a <a class="reference external" href="https://present.readthedocs.io/en/latest/codio.html">codio</a> (pre-recorded code block) on a slide.</p>
+<p align="center">
+   <img src="https://raw.githubusercontent.com/vinayak-mehta/present/master/docs/_static/codio.gif" width="800">
+</p>
+<p><code class="docutils literal notranslate"><span class="pre">present</span></code> is built on <a class="reference external" href="https://github.com/peterbrittain/asciimatics">asciimatics</a>, and it works with <code class="docutils literal notranslate"><span class="pre">Python&gt;=3.7</span></code>.</p>
+<p>Check out the <a class="reference external" href="https://present.readthedocs.io/en/latest/gallery/index.html">gallery</a> to see what everyone is making with <code class="docutils literal notranslate"><span class="pre">present</span></code>! You can add your slides by simply [opening an issue](https://github.com/vinayak-mehta/present/issues/new?assignees=&amp;labels=made-with-present&amp;template=submit-slides-to…</p>
+<p>地址：<a class="reference external" href="https://github.com/vinayak-mehta/present">https://github.com/vinayak-mehta/present</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-great-expectations-great-expectations">
+<h2>🤩Python随身听-技术精选： /great-expectations/great_expectations<a class="headerlink" href="#python-great-expectations-great-expectations" title="Permalink to this headline">¶</a></h2>
+<p>👉Always know what to expect from your data.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">pipeline-tests,dataquality,datacleaning,datacleaner,data-science,data-profiling,pipeline,pipeline-testing,cleandata,dataunittest,data-unit-tests,eda,exploratory-data-analysis,exploratory-analysis,exploratorydataanalysis,data-quality,data-engineering,pipeline-debt,data-profilers,mlops</span></code></p>
+<p>⭐️STARS：2732, 今日上升数↑:22</p>
+<p>👉README：</p>
+<!-- <<<Super-quickstart links go here>>> -->
+<img align="right" src="./generic_dickens_protagonist.png">
+<p>Great Expectations</p>
+<p><em>Always know what to expect from your data.</em></p>
+<p>Introduction</p>
+<p>Great Expectations helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.</p>
+<p>Software developers have long known that testing and documentation are essential for managing complex codebases. Great Expectations brings the same confidence, integrity, and acceleration to data science and data engineering teams.</p>
+<p>See <a class="reference external" href="https://medium.com/&#64;expectgreatdata/down-with-pipeline-debt-introducing-great-expectations-862ddc46782a">Down with Pipeline Debt!</a> for an introduction to the philosophy of pipeline testing.</p>
+<!--
+<<<A bunch of logos go here for social proof>>>
+
+
+Key features
+
+#### Expectations
+
+Expectations are assertions for data. They are the workhorse abstraction in Great Expectations, covering all kinds of common data issues, including:
+- `expect_column_values_to_not_be_null`
+- `expect_co...
+
+地址：[https://github.com/great-expectations/great_expectations](https://github.com/great-expectations/great_expectations)
+
+---
+
+
+## 🤩Python随身听-技术精选： /deepmipt/DeepPavlov
+👉An open source library for deep learning end-to-end dialog systems and chatbots.  
+
+😎TOPICS: `bot,nlp,chatbot,dialogue-systems,question-answering,chitchat,slot-filling,intent-classification,entity-extraction,named-entity-recognition,tensorflow,deep-learning,deep-neural-networks,intent-detection,dialogue-agents,dialogue-manager,artificial-intelligence,ai,nlp-machine-learning,machine-learning`  
+
+⭐️STARS：4672, 今日上升数↑:11  
+
+👉README：
+
+<img align="right" height="27%" width="27%" src="docs/_static/deeppavlov_logo.png"/>
+
+DeepPavlov is an open-source conversational AI library built on [TensorFlow](https://www.tensorflow.org/), [Keras](https://keras.io/)
+and [PyTorch](https://pytorch.org/).
+
+DeepPavlov is designed for
+* development of production ready chat-bots and complex conversational systems,
+* research in the area of NLP and, particularly, of dialog systems.
+
+### Quick Links
+
+* Demo [*demo.deeppavlov.ai*](https://demo.deeppavlov.ai/)
+* Documentation [*docs.deeppavlov.ai*](http://docs.deeppavlov.ai/)
+    * Model List [*docs:features/*](http://docs.deeppavlov.ai/en/master/features/overview.html)
+    * Contribution Guide [*docs:contribution_guide/*](http://docs.deeppavlov.ai/en/master/devguides/contribution_guide.html)
+* Issues [*github/issues/*](https://github.com/deepmipt/DeepPavlov/issues)
+* Forum [*forum.deeppavlov.ai*](https://forum.deeppavlov.ai/)
+* Blogs [*medium.com/deeppavlov*](https://medium.com/deeppavlov)
+* Tutorials [*examples/*...
+
+地址：[https://github.com/deepmipt/DeepPavlov](https://github.com/deepmipt/DeepPavlov)
+
+---
+
+
+## 🤩Python随身听-技术精选： /geekcomputers/Python
+👉My Python Examples  
+
+😎TOPICS: ``  
+
+⭐️STARS：18786, 今日上升数↑:16  
+
+👉README：
+
+
+## My Python Examples
+
+I do not consider myself a programmer. I create these little programs as experiments to play with Python, or to solve problems for myself. I would gladly accept pointers from others to improve, simplify, or make the code more efficient. If you would like to make any comments then please feel free to email me at craig@geekcomputers.co.uk.
+
+These scripts contain important functions which help reduce human workload.
+Code documentation is aligned correctly when the files are viewed in [Notepad++](https://notepad-plus-plus.org/).
+
+- [batch_file_rename.py](https://github.com/geekcomputers/Python/blob/master/batch_file_rename.py) - This batch renames a group of files in a given directory, once you pass the current and the new extensions.
+
+- [create_dir_if_not_there.py](https://github.com/geekcomputers/Python/blob/master/create_dir_if_not_there.py) - Checks to see if a directory exists in the users home directory. If a directory does not exist, then one will be created.
+
+- [Fast Youtube Downlo...
+
+地址：[https://github.com/geekcomputers/Python](https://github.com/geekcomputers/Python)
+
+---
+
+
+## 🤩Python随身听-技术精选： /kovidgoyal/kitty
+👉A cross-platform, fast, feature full, GPU based terminal emulator  
+
+😎TOPICS: `terminal-emulators,opengl,terminfo,vt100,python,c`  
+
+⭐️STARS：9735, 今日上升数↑:75  
+
+👉README：
+
+= kitty - the fast, featureful, GPU based, terminal emulator
+
+See https://sw.kovidgoyal.net/kitty/
+
+image:https://github.com/k...
+
+地址：[https://github.com/kovidgoyal/kitty](https://github.com/kovidgoyal/kitty)
+
+---
+
+
+## 🤩Python随身听-技术精选： /google-research/google-research
+👉Google Research  
+
+😎TOPICS: `machine-learning,ai,research`  
+
+⭐️STARS：12799, 今日上升数↑:12  
+
+👉README：
+
+## Google Research
+
+This repository contains code released by
+[Google Research](https://research.google).
+
+All datasets in this repository are released under the CC BY 4.0 International
+license, which can be found here:
+https://creativecommons.org/licenses/by/4.0/legalcode.  All source files in this
+repository are released under the Apache 2.0 license, the text of which can be
+found in the LICENSE file.
+
+
+Because the re...
+
+地址：[https://github.com/google-research/google-research](https://github.com/google-research/google-research)
+
+---
+
+
+## 🤩Python随身听-技术精选： /dafriedman97/mlbook
+👉Repository for the free online book Machine Learning from Scratch (link below!)  
+
+😎TOPICS: ``  
+
+⭐️STARS：334, 今日上升数↑:15  
+
+👉README：
+
+## Machine Learning from Scratch
+
+Welcome to the repo for my free online book, "Machine Learning from Scratch". 
+The book itself can be found [here](https://dafriedman97.github.io/mlbook/content/introduction.html). 
+(A somewhat ugly version of) the PDF can be found in the book.pdf file above in the `master` branch. N...
+
+地址：[https://github.com/dafriedman97/mlbook](https://github.com/dafriedman97/mlbook)
+
+---
+
+
+## 🤩Python随身听-技术精选： /spmallick/learnopencv
+👉Learn OpenCV  : C++ and Python Examples  
+
+😎TOPICS: `computer-vision,machine-learning,ai,deep-learning,deep-neural-networks,deeplearning,computervision,opencv,opencv-python,opencv-library,opencv3,opencv-cpp,opencv-tutorial`  
+
+⭐️STARS：12069, 今日上升数↑:13  
+
+👉README：
+
+## LearnOpenCV
+This repo contains code for Computer Vision, Deep learning, and AI articles shared on our blog [LearnOpenCV.com](https://www.LearnOpenCV.com).
+
+Want to become an expert in AI? [AI Courses by OpenCV](https://opencv.org/courses/) is a great place to start.
+
+<a href="https://opencv.org/courses/">
+<p align="center">
+<img src="https://www.learnopencv.com/wp-content/uploads/2020/04/AI-Courses-By-OpenCV-Github.png">
+</p>
+</a>
+
+### List of Blog Posts
+
+| Blog Post | |
+| ------------- |:-------------|
+|[Image Matting with state-of-the-art Method “F, B, Alpha Matting”](https://www.learnopencv.com/image-matting-with-state-of-the-art-method-f-b-alpha-matting/)|[Code](https://github.com/spmallick/learnopencv/tree/master/FBAMatting) |
+|[Bag Of Tricks For Image Classification - Let's check if it is working or not](https://www.learnopencv.com/bag-of-tricks-for-image-classification-lets-check-if-it-is-working-or-not/)| [Code](https://github.com/spmallick/learnopencv/tree/master/Bag-Of-Tricks-For-Image-Classifica...
+
+地址：[https://github.com/spmallick/learnopencv](https://github.com/spmallick/learnopencv)
+
+---
+
+
+## 🤩Python随身听-技术精选： /jakevdp/PythonDataScienceHandbook
+👉Python Data Science Handbook: full text in Jupyter Notebooks  
+
+😎TOPICS: `scikit-learn,numpy,python,jupyter-notebook,matplotlib,pandas`  
+
+⭐️STARS：25723, 今日上升数↑:24  
+
+👉README：
+
+## Python Data Science Handbook
+
+
+This repository contains the entire [Python Data Science Handbook](http://shop.oreilly.com/product/0636920034919.do), in the form of (free!) Jupyter notebooks.
+
+
+### How to Use this Book
+
+- Read the book in its entirety online at https://jakevdp.github.io/PythonDataScienceHandbook/
+
+- Run the code using the Jupyter notebooks available in this repository's [notebooks](notebooks) directory.
+
+
+
+- Buy the printed book through [O'Reilly Media](http://shop.oreilly.com/product/0636920034919.do)
+
+### About
+
+The book was written and tested with Python 3.5, though other Python versions (including Python 2.7) should work in nearly all cases.
+
+The book introduces the core libraries essential for working with data in Python: particularly [IPython](http://ipython.org), [NumPy](http://numpy.org), [Pandas](http://pandas.pydata.org), [Matplotlib](http://matplotlib.org), [Scikit-Learn](http://scikit-learn.org), and related packages.
+Familiarity with Python as a language is assumed; if you need...
+
+地址：[https://github.com/jakevdp/PythonDataScienceHandbook](https://github.com/jakevdp/PythonDataScienceHandbook)
+
+---
+
+
+## 🤩Python随身听-技术精选： /Pierian-Data/Complete-Python-3-Bootcamp
+👉Course Files for Complete Python 3 Bootcamp Course on Udemy  
+
+😎TOPICS: ``  
+
+⭐️STARS：12281, 今日上升数↑:15  
+
+👉README：
+
+## Complete-Python-3-Bootcamp
+Course Files for Complete Python 3 Bootcamp Course on Udemy
+
+
+Get it now for ...
+
+地址：[https://github.com/Pierian-Data/Complete-Python-3-Bootcamp](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp)
+
+---
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="2020-10-01.html" title="previous page">Python随身听-2020-10-01-技术精选</a>
+    <a class='right-next' id="next-link" href="2020-10-03.html" title="next page">Python随身听-2020-10-03-技术精选</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By DE8UG<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            更多内容与问题讨论请到「Python随身听」<image width=80 src="https://upload.jianshu.io/users/qrcodes/543964/%E5%BE%AE%E4%BF%A1-%E7%AC%AC8%E5%93%A5.jpg">
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
