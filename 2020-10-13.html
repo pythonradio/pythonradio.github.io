@@ -1,0 +1,1460 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python随身听-2020-10-13-技术精选 &#8212; Python随身听官方网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="my_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="my_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="my_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="my_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="./" src="my_static/documentation_options.js"></script>
+    <script src="my_static/jquery.js"></script>
+    <script src="my_static/underscore.js"></script>
+    <script src="my_static/doctools.js"></script>
+    <script src="my_static/language_data.js"></script>
+    <script src="my_static/togglebutton.js"></script>
+    <script src="my_static/clipboard.min.js"></script>
+    <script src="my_static/copybutton.js"></script>
+    <script src="my_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="my_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Python随身听-2020-10-12-技术精选" href="2020-10-12.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="my_static/logo-pythonradio.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python随身听官方网站</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   欢迎来到Python随身听【音频直接听←】
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="content.html">
+   →技术精选
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-01.html">
+     Python随身听-2020-10-01-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-02.html">
+     Python随身听-2020-10-02-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-03.html">
+     Python随身听-2020-10-03-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-05.html">
+     Python随身听-2020-10-05-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-06.html">
+     Python随身听-2020-10-06-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-07.html">
+     Python随身听-2020-10-07-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-08.html">
+     Python随身听-2020-10-08-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-09.html">
+     Python随身听-2020-10-09-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-10.html">
+     Python随身听-2020-10-10-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-11.html">
+     Python随身听-2020-10-11-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-12.html">
+     Python随身听-2020-10-12-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python随身听-2020-10-13-技术精选
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/2020-10-13.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-twintproject-twint">
+   🤩Python随身听-技术精选： /twintproject/twint
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#twint-twitter-intelligence-tool">
+   TWINT - Twitter Intelligence Tool
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tl-dr-benefits">
+     tl;dr Benefits
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limits-imposed-by-twi">
+     Limits imposed by Twi…
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-turboway-big-screen">
+   🤩Python随身听-技术精选： /TurboWay/big_screen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#big-screen">
+   big_screen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   功能
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   安装
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   运行
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-the-art-of-hacking-h4cker">
+   🤩Python随身听-技术精选： /The-Art-of-Hacking/h4cker
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cyber-security-resources">
+   Cyber Security Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-art-of-hacking-series">
+     The Art of Hacking Series
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-corentinj-real-time-voice-cloning">
+   🤩Python随身听-技术精选： /CorentinJ/Real-Time-Voice-Cloning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#real-time-voice-cloning">
+   Real-Time Voice Cloning
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#papers-implemented">
+     Papers implemented
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-scikit-learn-scikit-learn">
+   🤩Python随身听-技术精选： /scikit-learn/scikit-learn
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-timgrossmann-instapy">
+   🤩Python随身听-技术精选： /timgrossmann/InstaPy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-home-assistant-core">
+   🤩Python随身听-技术精选： /home-assistant/core
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-facebookresearch-transcoder">
+   🤩Python随身听-技术精选： /facebookresearch/TransCoder
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transcoder">
+   TransCoder
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies">
+     Dependencies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-python-geeks-automation-scripts">
+   🤩Python随身听-技术精选： /python-geeks/Automation-scripts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#automation-scripts">
+   Automation-scripts
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#update-1">
+     Update 1 :
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#update-2">
+     Update 2 :
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#these-are-my-lazy-panda-goals">
+       These are my Lazy Panda Goals
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     …
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-donnemartin-system-design-primer">
+   🤩Python随身听-技术精选： /donnemartin/system-design-primer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-pytorch-fairseq">
+   🤩Python随身听-技术精选： /pytorch/fairseq
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-jackfrued-python-100-days">
+   🤩Python随身听-技术精选： /jackfrued/Python-100-Days
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-100">
+     Python - 100天从新手到大师
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python">
+       Python应用领域和职业发展分析
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-ciphey-ciphey">
+   🤩Python随身听-技术精选： /Ciphey/Ciphey
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-apprenticeharper-dedrm-tools">
+   🤩Python随身听-技术精选： /apprenticeharper/DeDRM_tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dedrm-tools">
+   DeDRM_tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-pitt-csc-summer2021-internships">
+   🤩Python随身听-技术精选： /Pitt-CSC/Summer2021-Internships
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summer-2021-internships">
+   Summer 2021 Internships ☀️👩‍💻
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-list">
+     The List 👔
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-jrohy-multi-v2ray">
+   🤩Python随身听-技术精选： /Jrohy/multi-v2ray
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multi-v2ray">
+   multi-v2ray
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#english">
+     <span class="xref myst">
+      中文
+     </span>
+     <span class="xref myst">
+      English
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     特色
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     功能
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-tmrowco-electricitymap-contrib">
+   🤩Python随身听-技术精选： /tmrowco/electricitymap-contrib
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electricitymap">
+   electricityMap
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contribute">
+     Contribute
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-megadose-holehe">
+   🤩Python随身听-技术精选： /megadose/holehe
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#holehe">
+   Holehe
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#educational-purposes-only">
+   Educational purposes only
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-you-have-any-suggestions-please-do-not-hesitate-to-contact-us">
+     If you have any suggestions, please do not hesitate to contact us.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#project-example-holehe-maltego">
+     Project example : Holehe Maltego
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#demo">
+       Demo
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prerequisite">
+     💡 Prerequisite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation">
+     🛠️ Installation
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#with-pypi">
+       With PyPI
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#with-github">
+       With Github
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     📚 Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#u">
+     📈 U…
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-dennybritz-reinforcement-learning">
+   🤩Python随身听-技术精选： /dennybritz/reinforcement-learning
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overview">
+     Overview
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table-of-contents">
+     Table of Contents
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-simoninithomas-deep-reinforcement-learning-course">
+   🤩Python随身听-技术精选： /simoninithomas/Deep_reinforcement_learning_Course
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deep-reinforcement-learning-course">
+   Deep Reinforcement Learning Course
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-new-version-of-deep-reinforcement-learning-course-starts-on-october-the-2nd-2020-more-info-here">
+   ⚠️ The new version of Deep Reinforcement Learning Course starts on October the 2nd 2020. ➡️ More info here ⬅️
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-href-https-simoninithomas-github-io-deep-reinforcement-learning-course-syllabus-a-br">
+   <a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">
+    Syllabus
+   </a>
+   <br/>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-1-introduction-to-deeep-reinforcement-learning">
+     Part 1: Introduction to Deeep Reinforcement Learning
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#article-introduction-to-deep-reinforcement-learning-br-br">
+       📜 ARTICLE Introduction to Deep Reinforcement Learning
+       <br/>
+       <br/>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#video-introduction-to-deep-reinforcement-learning">
+       📹 VIDEO Introduction to Deep Reinforcement Learning
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-2-q-learning-with-frozenlake-br">
+     Part 2: Q-learning with FrozenLake
+     <br/>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#article-h">
+       📜 [ARTICLE](h…
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-fastai-fastbook">
+   🤩Python随身听-技术精选： /fastai/fastbook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-fastai-book">
+   The fastai book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-aliaksandrsiarohin-first-order-model">
+   🤩Python随身听-技术精选： /AliaksandrSiarohin/first-order-model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#first-order-motion-model-for-image-animation">
+   First Order Motion Model for Image Animation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-animations">
+     Example animations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#voxceleb-dataset">
+       VoxCeleb Dataset
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#fashion-dataset">
+       Fashion Dataset
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mgif-dataset">
+       MGIF Dataset
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Installation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#yaml-configs">
+       YAML configs
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-jakevdp-pythondatasciencehandbook">
+   🤩Python随身听-技术精选： /jakevdp/PythonDataScienceHandbook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-data-science-handbook">
+   Python Data Science Handbook
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-use-this-book">
+     How to Use this Book
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about">
+     About
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-coreymschafer-code-snippets">
+   🤩Python随身听-技术精选： /CoreyMSchafer/code_snippets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code">
+   code_…
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-2020-10-13">
+<h1>Python随身听-2020-10-13-技术精选<a class="headerlink" href="#python-2020-10-13" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>致读者：亲爱的「Python随身听」的观众们，这是由DE8UG的人工非智能给你带来的新的一期技术精选。<br />
+主要为编程初学者，开发工程师，算法工程师，数据分析师，运维，测试，运营，产品等各个岗位的Python爱好者带来Python世界的流行趋势，前沿技术。<br />
+你可以挑选自己喜欢的项目尽情玩耍，任何想法欢迎留言讨论。<br />
+本文的结构和内容会经常更新，每天10：24分左右发布，感谢订阅🆙和收藏☆。<br />
+（点击原文或到pythonradio.online网站查看可点击的文档链接）</p>
+</div></blockquote>
+<p><img alt="" src="https://img2020.cnblogs.com/blog/152871/202010/152871-20201005104055252-1408177983.png" /></p>
+<div class="section" id="python-twintproject-twint">
+<h2>🤩Python随身听-技术精选： /twintproject/twint<a class="headerlink" href="#python-twintproject-twint" title="Permalink to this headline">¶</a></h2>
+<p>👉An advanced Twitter scraping &amp; OSINT tool written in Python that doesn’t use Twitter’s API, allowing you to scrape a user’s followers, following, Tweets and more while evading most API limitations.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">osint,twitter,python,scrape,tweets,elasticsearch,kibana,scrape-followers,scrape-likes,scrape-following,twint,tweep</span></code></p>
+<p>⭐️STARS：7930, 今日上升数↑:142</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="twint-twitter-intelligence-tool">
+<h2>TWINT - Twitter Intelligence Tool<a class="headerlink" href="#twint-twitter-intelligence-tool" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>No authentication. No API. No limits.</p>
+</div></blockquote>
+<p>Twint is an advanced Twitter scraping tool written in Python that allows for scraping Tweets from Twitter profiles <strong>without</strong> using Twitter’s API.</p>
+<p>Twint utilizes Twitter’s search operators to let you scrape Tweets from specific users, scrape Tweets relating to certain topics, hashtags &amp; trends, or sort out <em>sensitive</em> information from Tweets like e-mail and phone numbers. I find this very useful, and you can get really creative with it too.</p>
+<p>Twint also makes special queries to Twitter allowing you to also scrape a Twitter user’s followers, Tweets a user has liked, and who they follow <strong>without</strong> any authentication, API, Selenium, or browser emulation.</p>
+<div class="section" id="tl-dr-benefits">
+<h3>tl;dr Benefits<a class="headerlink" href="#tl-dr-benefits" title="Permalink to this headline">¶</a></h3>
+<p>Some of the benefits of using Twint vs Twitter API:</p>
+<ul class="simple">
+<li><p>Can fetch almost <strong>all</strong> Tweets (Twitter API limits to last 3200 Tweets only);</p></li>
+<li><p>Fast initial setup;</p></li>
+<li><p>Can be used anonymously and without Twitter sign up;</p></li>
+<li><p><strong>No rate limitations</strong>.</p></li>
+</ul>
+</div>
+<div class="section" id="limits-imposed-by-twi">
+<h3>Limits imposed by Twi…<a class="headerlink" href="#limits-imposed-by-twi" title="Permalink to this headline">¶</a></h3>
+<p>地址：<a class="reference external" href="https://github.com/twintproject/twint">https://github.com/twintproject/twint</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-turboway-big-screen">
+<h2>🤩Python随身听-技术精选： /TurboWay/big_screen<a class="headerlink" href="#python-turboway-big-screen" title="Permalink to this headline">¶</a></h2>
+<p>👉数据大屏可视化</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：472, 今日上升数↑:122</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="big-screen">
+<h2>big_screen<a class="headerlink" href="#big-screen" title="Permalink to this headline">¶</a></h2>
+<p>数据大屏可视化</p>
+</div>
+<div class="section" id="id1">
+<h2>功能<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>便利性工具, 结构简单, 直接传数据就可以实现数据大屏</p>
+</div>
+<div class="section" id="id2">
+<h2>安装<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple flask</p>
+</div>
+<div class="section" id="id3">
+<h2>运行<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>python app.py;</p>
+<ul class="simple">
+<li><p>大数据可视化展板通用模板 http://127.0.0.1…</p></li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/TurboWay/big_screen">https://github.com/TurboWay/big_screen</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-the-art-of-hacking-h4cker">
+<h2>🤩Python随身听-技术精选： /The-Art-of-Hacking/h4cker<a class="headerlink" href="#python-the-art-of-hacking-h4cker" title="Permalink to this headline">¶</a></h2>
+<p>👉This repository is primarily maintained by Omar Santos and includes thousands of resources related to ethical hacking  / penetration testing, digital forensics and incident response (DFIR), vulnerability research, exploit development, reverse engineering, and more.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">hacking,penetration-testing,hacking-series,video-course,cybersecurity,ethical-hacking,ethicalhacking,hacker,exploit,exploits,exploit-development,vulnerability,vulnerability-scanners,vulnerability-assessment,vulnerability-management,vulnerability-identification,awesome-lists,awesome-list,training,hackers</span></code></p>
+<p>⭐️STARS：7593, 今日上升数↑:149</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="cyber-security-resources">
+<h2>Cyber Security Resources<a class="headerlink" href="#cyber-security-resources" title="Permalink to this headline">¶</a></h2>
+<center><img src="https://h4cker.org/img/h4cker2.PNG" width="200" height="300" /> </center>
+<p>This repository includes thousands of cybersecurity-related references and resources and it is maintained by <a class="reference external" href="https://omarsantos.io/">Omar Santos</a>. This GitHub repository has been created to provide supplemental material to several books, video courses, and live training created by Omar Santos and other co-authors. It provides over 7,000 references, scripts, tools, code, and other resources that help offensive and defensive security professionals learn and develop new skills. This GitHub repository provides guidance on how build your own hacking environment, learn about offensive security (ethical hacking) techniques, vulnerability research, exploit development, reverse engineering, malware analysis, threat intelligence, threat hunting, digital forensics and incident response (DFIR), includes examples of real-life penetration testing reports, and more.</p>
+<div class="section" id="the-art-of-hacking-series">
+<h3>The Art of Hacking Series<a class="headerlink" href="#the-art-of-hacking-series" title="Permalink to this headline">¶</a></h3>
+<p>The […</p>
+<p>地址：<a class="reference external" href="https://github.com/The-Art-of-Hacking/h4cker">https://github.com/The-Art-of-Hacking/h4cker</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-corentinj-real-time-voice-cloning">
+<h2>🤩Python随身听-技术精选： /CorentinJ/Real-Time-Voice-Cloning<a class="headerlink" href="#python-corentinj-real-time-voice-cloning" title="Permalink to this headline">¶</a></h2>
+<p>👉Clone a voice in 5 seconds to generate arbitrary speech in real-time</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">deep-learning,pytorch,tensorflow,tts,voice-cloning,python</span></code></p>
+<p>⭐️STARS：20163, 今日上升数↑:268</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="real-time-voice-cloning">
+<h2>Real-Time Voice Cloning<a class="headerlink" href="#real-time-voice-cloning" title="Permalink to this headline">¶</a></h2>
+<p>This repository is an implementation of <a class="reference external" href="https://arxiv.org/pdf/1806.04558.pdf">Transfer Learning from Speaker Verification to
+Multispeaker Text-To-Speech Synthesis</a> (SV2TTS) with a vocoder that works in real-time. Feel free to check <a class="reference external" href="https://matheo.uliege.be/handle/2268.2/6801">my thesis</a> if you’re curious or if you’re looking for info I haven’t documented. Mostly I would recommend giving a quick look to the figures beyond the introduction.</p>
+<p>SV2TTS is a three-stage deep learning framework that allows to create a numerical representation of a voice from a few seconds of audio, and to use it to condition a text-to-speech model trained to generalize to new voices.</p>
+<p><strong>Video demonstration</strong> (click the picture):</p>
+<div class="section" id="papers-implemented">
+<h3>Papers implemented<a class="headerlink" href="#papers-implemented" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>URL</p></th>
+<th class="head"><p>Designation</p></th>
+<th class="head"><p>Title</p></th>
+<th class="head"><p>Implementation source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://arxiv.org/pdf/1806.04558.pdf"><strong>1806.04558</strong></a></p></td>
+<td><p><strong>SV2TTS</strong></p></td>
+<td><p>**Transfer Learning from Speaker Verification to Multispeaker Text-To-Sp…</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>地址：<a class="reference external" href="https://github.com/CorentinJ/Real-Time-Voice-Cloning">https://github.com/CorentinJ/Real-Time-Voice-Cloning</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-scikit-learn-scikit-learn">
+<h2>🤩Python随身听-技术精选： /scikit-learn/scikit-learn<a class="headerlink" href="#python-scikit-learn-scikit-learn" title="Permalink to this headline">¶</a></h2>
+<p>👉scikit-learn: machine learning in Python</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">machine-learning,python,statistics,data-science,data-analysis</span></code></p>
+<p>⭐️STARS：42590, 今日上升数↑:16</p>
+<p>👉README：</p>
+<p>.. -<em>- mode: rst -</em>-</p>
+<p>|Azure|_ |Travis|_ |Codecov|_ |CircleCI|_ |PythonVersion|_ |PyPi|_ |DOI|_</p>
+<p>.. |Azure| image:: https://dev.azure.com/scikit-learn/scikit-learn/_apis/build/status/scikit-learn.scikit-learn?branchName=master
+.. _Azure: https://dev.azure.com/scikit-learn/scikit-learn/_build/latest?definitionId=1&amp;branchName=master</p>
+<p>.. |Travis| image:: https://api.travis-ci.org/scikit-learn/scikit-learn.svg?branch=master
+.. _Travis: https://travis-ci.org/scikit-learn/scikit-learn</p>
+<p>.. |Codecov| image:: https://codecov.io/github/scikit-learn/scikit-learn/badge.svg?branch=master&amp;service=github
+.. _Codecov: https://codecov.io/github/scikit-learn/scikit-learn?branch=master</p>
+<p>.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-learn/tree/master.svg?style=shield&amp;circle-token=:circle-token
+.. _CircleCI: https://circleci.com/gh/scikit-learn/scikit-learn</p>
+<p>.. |PythonVersion| image:: https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue
+.. _PythonVersion: https://img.shields.io/badge/python-3.6…</p>
+<p>地址：<a class="reference external" href="https://github.com/scikit-learn/scikit-learn">https://github.com/scikit-learn/scikit-learn</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-timgrossmann-instapy">
+<h2>🤩Python随身听-技术精选： /timgrossmann/InstaPy<a class="headerlink" href="#python-timgrossmann-instapy" title="Permalink to this headline">¶</a></h2>
+<p>👉📷 Instagram Bot - Tool for automated Instagram interactions</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">instagram,clarifai,automation,script,python,selenium,bot</span></code></p>
+<p>⭐️STARS：11671, 今日上升数↑:15</p>
+<p>👉README：</p>
+<p align="center">
+  <img src="https://i.imgur.com/sJzfZsL.jpg" width="154">
+  <h1 align="center">InstaPy</h1>
+  <p align="center">Tooling that <b>automates</b> your social media interactions to “farm” Likes, Comments, and Followers on Instagram
+Implemented in Python using the Selenium module.<p>
+  <p align="center">
+    <a href="https://github.com/timgrossmann/InstaPy/blob/master/LICENSE">
+      <img src="https://img.shields.io/badge/license-GPLv3-blue.svg" />
+    </a>
+    <a href="https://github.com/SeleniumHQ/selenium">
+      <img src="https://img.shields.io/badge/built%20with-Selenium-yellow.svg" />
+    </a>
+    <a href="https://www.python.org/">
+    	<img src="https://img.shields.io/badge/built%20with-Python3-red.svg" />
+    </a>
+    <a href="https://travis-ci.org/timgrossmann/InstaPy">
+	<img src="https://travis-ci.org/timgrossmann/InstaPy.svg?branch=master">
+    </a>
+    <a href="https://www.github.com/timgrossmann/InstaPy#backer">
+	<img src="https://opencollective.com/instapy/backers/badge.svg">
+    </...
+<p>地址：<a class="reference external" href="https://github.com/timgrossmann/InstaPy">https://github.com/timgrossmann/InstaPy</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-home-assistant-core">
+<h2>🤩Python随身听-技术精选： /home-assistant/core<a class="headerlink" href="#python-home-assistant-core" title="Permalink to this headline">¶</a></h2>
+<p>👉:house_with_garden: Open source home automation that puts local control and privacy first</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,home-automation,iot,internet-of-things,mqtt,raspberry-pi,asyncio,hacktoberfest</span></code></p>
+<p>⭐️STARS：36192, 今日上升数↑:26</p>
+<p>👉README：</p>
+<p>Home Assistant |Chat Status|</p>
+<p>Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.</p>
+<p>Check out <code class="docutils literal notranslate"><span class="pre">home-assistant.io</span> <span class="pre">&lt;https://home-assistant.io&gt;</span></code>__ for <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">demo</span> <span class="pre">&lt;https://home-assistant.io/demo/&gt;</span></code><strong>, <code class="docutils literal notranslate"><span class="pre">installation</span> <span class="pre">instructions</span> <span class="pre">&lt;https://home-assistant.io/getting-started/&gt;</span></code></strong>,
+<code class="docutils literal notranslate"><span class="pre">tutorials</span> <span class="pre">&lt;https://home-assistant.io/getting-started/automation-2/&gt;</span></code>__ and <code class="docutils literal notranslate"><span class="pre">documentation</span> <span class="pre">&lt;https://home-assistant.io/docs/&gt;</span></code>__.</p>
+<p>|screenshot-states|</p>
+<p>Featured integrations</p>
+<p>|screenshot-components|</p>
+<p>The system is built using a modular approach so support for other devices or actions can be implemented easily. See also the `section on architecture &lt;https://developers.home-assistant.io/docs/en/architectu…</p>
+<p>地址：<a class="reference external" href="https://github.com/home-assistant/core">https://github.com/home-assistant/core</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-facebookresearch-transcoder">
+<h2>🤩Python随身听-技术精选： /facebookresearch/TransCoder<a class="headerlink" href="#python-facebookresearch-transcoder" title="Permalink to this headline">¶</a></h2>
+<p>👉Public release of the TransCoder research project https://arxiv.org/pdf/2006.03511.pdf</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：863, 今日上升数↑:13</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="transcoder">
+<h2>TransCoder<a class="headerlink" href="#transcoder" title="Permalink to this headline">¶</a></h2>
+<p>Pytorch original implementation of TransCoder in <a class="reference external" href="https://arxiv.org/pdf/2006.03511.pdf">Unsupervised Translation of Programming Languages</a></p>
+<div class="section" id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3</p></li>
+<li><p><a class="reference external" href="http://www.numpy.org/">NumPy</a></p></li>
+<li><p><a class="reference external" href="http://pytorch.org/">PyTorch</a></p></li>
+<li><p><a class="reference external" href="https://github.com/fairinternal/TransCoder_release/tree/master/XLM/tools#fastbpe">fastBPE</a> (generate and apply BPE codes)</p></li>
+<li><p><a class="reference external" href="https://github.com/fairinternal/TransCoder_release/tree/master/XLM/tools#tokenizers">Moses</a> (scripts to clean and tokenize text only - no installation required)</p></li>
+<li><p><a class="reference external" href="https://github.com/nvidia/apex#quick-start">Apex</a> (for fp16 training)</p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/clang/">libclang</a> (for C++ tokenization)</p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/submitit/">submitit</a> (to run the preprocessing pipeline on remote machine)</p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/six/">six</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/sacrebleu/">sacrebleu</a> (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sacrebleu==&quot;1.2.11&quot;</span></code>)</p></li>
+</ul>
+<p>If your <code class="docutils literal notranslate"><span class="pre">libclang.so</span></code> is not in <code class="docutils literal notranslate"><span class="pre">/usr/lib/llvm-7/lib/</span></code>, replace the path to <code class="docutils literal notranslate"><span class="pre">libclang.so</span></code> to the correct path …</p>
+<p>地址：<a class="reference external" href="https://github.com/facebookresearch/TransCoder">https://github.com/facebookresearch/TransCoder</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-python-geeks-automation-scripts">
+<h2>🤩Python随身听-技术精选： /python-geeks/Automation-scripts<a class="headerlink" href="#python-python-geeks-automation-scripts" title="Permalink to this headline">¶</a></h2>
+<p>👉Repo for creating awesome automation scripts to make my panda lazier</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,automation,hacktoberfest,hacktoberfest2020,hacktoberfest-accepted</span></code></p>
+<p>⭐️STARS：49, 今日上升数↑:15</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="automation-scripts">
+<h2>Automation-scripts<a class="headerlink" href="#automation-scripts" title="Permalink to this headline">¶</a></h2>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<p>Do you know anything that can help all to easy our tough life than tell that secret to us and help us to become lazy like Panda</p>
+<div class="section" id="update-1">
+<h3>Update 1 :<a class="headerlink" href="#update-1" title="Permalink to this headline">¶</a></h3>
+<p><strong>Thanks for all contributors my panda stopped cycling now 🛴</strong></p>
+</div>
+<div class="section" id="update-2">
+<h3>Update 2 :<a class="headerlink" href="#update-2" title="Permalink to this headline">¶</a></h3>
+<p><strong>Cheers to all, my panda removed exercise from daily schedule 🤸‍♂️</strong></p>
+<p>And it’s okay if you’re not aware of process. Kindly raise query by creating pull request (In query template). Here is the link for that how to create a pull request in other’s Repo</p>
+<p><a class="reference external" href="https://opensource.com/article/19/7/create-pull-request-github">How to create pull request</a></p>
+<div class="section" id="these-are-my-lazy-panda-goals">
+<h4>These are my Lazy Panda Goals<a class="headerlink" href="#these-are-my-lazy-panda-goals" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Goal Achieved - 59/75</p></li>
+<li><p>Goal 25 - Panda stopped Cycling (Completed)</p></li>
+<li><p>Goal 50 - Panda stopped doing Exercise</p></li>
+<li><p>Goal 75 - Panda stopped Playing outdoor games</p></li>
+<li><p>Goal 100 - Panda hire someone for cleaning house</p></li>
+</ul>
+<p><strong>Leave a star =&gt; Contribution in arranging Food for panda 😴</strong></p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>…<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>地址：<a class="reference external" href="https://github.com/python-geeks/Automation-scripts">https://github.com/python-geeks/Automation-scripts</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-donnemartin-system-design-primer">
+<h2>🤩Python随身听-技术精选： /donnemartin/system-design-primer<a class="headerlink" href="#python-donnemartin-system-design-primer" title="Permalink to this headline">¶</a></h2>
+<p>👉Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">programming,development,design,design-system,system,design-patterns,web,web-application,webapp,python,interview,interview-questions,interview-practice</span></code></p>
+<p>⭐️STARS：109031, 今日上升数↑:90</p>
+<p>👉README：</p>
+<p>*<span class="xref myst">English</span> ∙ <span class="xref myst">日本語</span> ∙ <span class="xref myst">简体中文</span> ∙ <span class="xref myst">繁體中文</span> | <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/170">العَرَبِيَّة‎</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/220">বাংলা</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/40">Português do Brasil</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/186">Deutsch</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/130">ελληνικά</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/272">עברית</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/104">Italiano</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/102">한국어</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/110">فارسی</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/68">Polski</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/87">русский язык</a> ∙ <a class="reference external" href="https://github.com/donnemartin/system-design-primer/issues/136">Español</a> ∙ […</p>
+<p>地址：<a class="reference external" href="https://github.com/donnemartin/system-design-primer">https://github.com/donnemartin/system-design-primer</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-pytorch-fairseq">
+<h2>🤩Python随身听-技术精选： /pytorch/fairseq<a class="headerlink" href="#python-pytorch-fairseq" title="Permalink to this headline">¶</a></h2>
+<p>👉Facebook AI Research Sequence-to-Sequence Toolkit written in Python.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,pytorch,artificial-intelligence</span></code></p>
+<p>⭐️STARS：9194, 今日上升数↑:16</p>
+<p>👉README：</p>
+<p align="center">
+  <img src="docs/fairseq_logo.png" width="150">
+  <br />
+  <br />
+  <a href="https://github.com/pytorch/fairseq/blob/master/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
+  <a href="https://github.com/pytorch/fairseq/releases"><img alt="Latest Release" src="https://img.shields.io/github/release/pytorch/fairseq.svg" /></a>
+  <a href="https://github.com/pytorch/fairseq/actions?query=workflow:build"><img alt="Build Status" src="https://github.com/pytorch/fairseq/workflows/build/badge.svg" /></a>
+  <a href="https://fairseq.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/fairseq/badge/?version=latest" /></a>
+</p>
+<p>Fairseq(-py) is a sequence modeling toolkit that allows researchers and
+developers to train custom models for translation, summarization, language
+modeling and other text generation tasks.
+We provide reference implementations of various sequence modeling papers:</p>
+<details><sum...
+<p>地址：<a class="reference external" href="https://github.com/pytorch/fairseq">https://github.com/pytorch/fairseq</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-jackfrued-python-100-days">
+<h2>🤩Python随身听-技术精选： /jackfrued/Python-100-Days<a class="headerlink" href="#python-jackfrued-python-100-days" title="Permalink to this headline">¶</a></h2>
+<p>👉Python - 100天从新手到大师</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：93907, 今日上升数↑:96</p>
+<p>👉README：</p>
+<div class="section" id="python-100">
+<h3>Python - 100天从新手到大师<a class="headerlink" href="#python-100" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>作者</strong>：骆昊</p>
+<p><strong>说明</strong>：从项目上线到获得8w+星标以来，一直收到反馈说基础部分（前15天的内容）对新手来说是比较困难的，建议有配套视频进行讲解。最近把基础部分的内容重新创建了一个名为<a class="reference external" href="https://github.com/jackfrued/Python-Core-50-Courses">“Python-Core-50-Courses”</a>的项目，<strong>用更为简单通俗的方式重写了这部分内容并附带了视频讲解</strong>，初学者可以关注下这个新项目。国内用户如果访问GitHub比较慢的话，也可以关注我的知乎号<a class="reference external" href="https://www.zhihu.com/people/jackfrued">Python-Jack</a>上的<a class="reference external" href="https://zhuanlan.zhihu.com/c_1216656665569013760">“从零开始学Python”</a>专栏，专栏会持续更新，还有大家比较期待的“数据分析”的内容也即将上线，<strong>欢迎大家关注我在知乎的专栏、文章和回答</strong>。</p>
+<p>创作不易，感谢大家的打赏支持，这些钱基本不会用于购买咖啡，而是通过腾讯公益、美团公益、水滴筹等平台捐赠给需要帮助的人（<span class="xref myst">点击</span>了解捐赠情况）。需要加入QQ交流群的可以扫描下面的二维码，交流群会为大家提供<strong>学习资源</strong>和<strong>问题解答</strong>，还会持续为大家带来<strong>免费的线上Python体验课和行业公开课</strong>，敬请关注。</p>
+</div></blockquote>
+<div class="section" id="python">
+<h4>Python应用领域和职业发展分析<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h4>
+<p>简单的说，Python是一个“优雅”、“明确”、“简单”的编程语言。</p>
+<ul class="simple">
+<li><p>学习曲线低，非专业人士也能上手</p></li>
+<li><p>开源系统，拥有强大的生态圈</p></li>
+<li><p>解释型语言，完美的平台可移植性</p></li>
+<li><p>动态类型语言，支持面向对象和函数式编程</p></li>
+<li><p>代码规范程度高，可读性强</p></li>
+</ul>
+<p>Python在以下领域都有用武之地。</p>
+<ul class="simple">
+<li><p>后端开发 - Python / Java / Go / PHP</p></li>
+<li><p>DevOps - Python / Shell / Ruby</p></li>
+<li><p>数据采集 - Python / C++ / Java</p></li>
+<li><p>量化交易 - Python / C++ / R</p></li>
+<li><p>数据科学 - Python / R / Julia / Matlab</p></li>
+<li><p>机器学习 - Python / R / C++ / Julia</p></li>
+<li><p>自动…</p></li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/jackfrued/Python-100-Days">https://github.com/jackfrued/Python-100-Days</a></p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-ciphey-ciphey">
+<h2>🤩Python随身听-技术精选： /Ciphey/Ciphey<a class="headerlink" href="#python-ciphey-ciphey" title="Permalink to this headline">¶</a></h2>
+<p>👉⚡ Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes ⚡</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">decryption,natural-language-processing,cryptography,cipher,artificial-intelligence,ctf-tools,ctf,cpp,python,hacking,pentesting,deep-neural-network,hashes,cyberchef-magic,encryptions,encodings,hacktoberfest</span></code></p>
+<p>⭐️STARS：5038, 今日上升数↑:53</p>
+<p>👉README：</p>
+<p align="center">
+Translations <br>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/id/README.md>🇮🇩 ID   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/it/README.md>🇮🇹 IT   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/de/README.md>🇩🇪 DE   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/hu/README.md>🇭🇺 HU   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/nl/README.md>🇳🇱 NL   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/pt-br/README.md>🇧🇷 PT-BR   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/ru/README.md>🇷🇺 RU   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/fr/README.md>🇫🇷 FR   </a>
+<a href=https://github.com/Ciphey/Ciphey/tree/master/translations/zh/README.md>🇨🇳 ZH   </a>
+ <br><br>
+➡️
+<a href="https://github.com/Ciphey/Ciphey/wiki">Documentation</a> |
+<a href="https://discord.ciphey.online">Discord</a> |
+ <a href="https://...
+<p>地址：<a class="reference external" href="https://github.com/Ciphey/Ciphey">https://github.com/Ciphey/Ciphey</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-apprenticeharper-dedrm-tools">
+<h2>🤩Python随身听-技术精选： /apprenticeharper/DeDRM_tools<a class="headerlink" href="#python-apprenticeharper-dedrm-tools" title="Permalink to this headline">¶</a></h2>
+<p>👉DeDRM tools for ebooks</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：8598, 今日上升数↑:18</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="dedrm-tools">
+<h2>DeDRM_tools<a class="headerlink" href="#dedrm-tools" title="Permalink to this headline">¶</a></h2>
+<p>DeDRM tools for ebooks</p>
+<p>This is a repository of all the scripts and other tools for removing DRM from ebooks that I could find, committed in date order as best as I could manage. (Except for the Requiem tools for Apple’s iBooks, and Convert LIT for Microsoft’s .lit ebooks.)</p>
+<p>Mostly it tracks the tools released by Apprentice Alf, athough it also includes the individual tools and their histories from before Alf had a blog.</p>
+<p>Users should download the latest zip archive.
+Developers might be interested in forking the repository, as it contains unzipped versions of those tools that are zipped to make the changes over time easier to follow.</p>
+<p>For the latest Amazon KFX format, users of the calibre plugin should also install the KFX Input p…</p>
+<p>地址：<a class="reference external" href="https://github.com/apprenticeharper/DeDRM_tools">https://github.com/apprenticeharper/DeDRM_tools</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-pitt-csc-summer2021-internships">
+<h2>🤩Python随身听-技术精选： /Pitt-CSC/Summer2021-Internships<a class="headerlink" href="#python-pitt-csc-summer2021-internships" title="Permalink to this headline">¶</a></h2>
+<p>👉Collection of Summer 2021 tech internships!</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">interview-preparation,internships,hacktoberfest</span></code></p>
+<p>⭐️STARS：2173, 今日上升数↑:13</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="summer-2021-internships">
+<h2>Summer 2021 Internships ☀️👩‍💻<a class="headerlink" href="#summer-2021-internships" title="Permalink to this headline">¶</a></h2>
+<p>Use this repo to share and keep track of any tech-related internships. For a <a class="reference external" href="https://docs.google.com/spreadsheets/d/1bJq7YQV19TWyzPCBeQi5P4uOm8uiAAm2AHCnVNGRIDg/edit#gid=0">Google Sheet 📝 version of this repo (that remains in sync with this table) click here</a>! For more tips on the internship process check out the <a class="reference external" href="https://www.pittcs.wiki/zero-to-offer">Zero to Offer 📈 program here</a>.</p>
+<p>📫  Want weekly internship postings in your inbox? Join the internship newsletter <a class="reference external" href="https://forms.gle/khRdKEm9AXaFAZg97">here</a>!</p>
+<p>🎓 Check out our New Grad repo <a class="reference external" href="https://github.com/Pitt-CSC/NewGrad-2021">here</a>.</p>
+<p>🤗 <strong>Contribute by submitting a <a class="reference external" href="https://github.com/susam/gitpr#create-pull-request">pull request</a> or <a class="reference external" href="https://bit.ly/3d5O76c">filling out this form</a>!</strong>  🤗</p>
+<div class="section" id="the-list">
+<h3>The List 👔<a class="headerlink" href="#the-list" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Location</p></th>
+<th class="head"><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://akunacapital.com/careers?&amp;experience=intern&amp;department=&amp;location=&amp;search_term=#careers">Akuna Capital</a></p></td>
+<td><p>Boston, Chicago, International Location</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>[Apple](…</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>地址：<a class="reference external" href="https://github.com/Pitt-CSC/Summer2021-Internships">https://github.com/Pitt-CSC/Summer2021-Internships</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-jrohy-multi-v2ray">
+<h2>🤩Python随身听-技术精选： /Jrohy/multi-v2ray<a class="headerlink" href="#python-jrohy-multi-v2ray" title="Permalink to this headline">¶</a></h2>
+<p>👉v2ray多用户管理部署程序</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">v2ray,vmess,http2,websockets,multi-v2ray,multiple,socks5,mtproto,trojan,vless</span></code></p>
+<p>⭐️STARS：4223, 今日上升数↑:13</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="multi-v2ray">
+<h2>multi-v2ray<a class="headerlink" href="#multi-v2ray" title="Permalink to this headline">¶</a></h2>
+<p>V2ray多用户管理脚本，向导式管理[新增|删除|修改]传输协议，享受V2ray的乐趣~</p>
+<div class="section" id="english">
+<h3><span class="xref myst">中文</span>  <span class="xref myst">English</span><a class="headerlink" href="#english" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id5">
+<h3>特色<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>[x] 调用v2ray官方api进行流量统计</p></li>
+<li><p>[x] <strong>多用户, 多端口管理</strong>, 混合传输协议管理不再是梦</p></li>
+<li><p>[x] 首次安装时产生随机端口，默认配置mkcp + 随机一种 (srtp | wechat-video | utp | dtls | wireguard) header伪装;<br />
+ 安装完成显示配置信息;</p></li>
+<li><p>[x] 查看配置信息显示vmess字符串(v2rayN的分享链接格式)</p></li>
+<li><p>[x] 生成<strong>Telegram</strong>的socks5/MTProto分享链接, 支持socks5 + tls组合</p></li>
+<li><p>[x] 支持http/2, 随机生成伪装h2 path</p></li>
+<li><p>[x] 开启关闭tcpFastOpen</p></li>
+<li><p>[x] 直接开启<a class="reference external" href="https://github.com/Jrohy/multi-v2ray/wiki/CloudFlare-cdn%E4%BB%A3%E7%90%86v2ray%E6%B5%81%E9%87%8F">CDN</a></p></li>
+<li><p>[x] 开启关闭动态端口</p></li>
+<li><p>[x] 定时更新v2ray(需手动开启)</p></li>
+<li><p>[x] 支持新版v2ray配置文件格式(v4.1+)</p></li>
+<li><p>[x] 支持范围端口修改</p></li>
+<li><p>[x] 支持程序和<strong>命令行参数</strong>管理控制</p></li>
+<li><p>[x] 支持docker部署</p></li>
+<li><p>[x] 支持VLESS和Trojan(v4.31.0+)</p></li>
+<li><p>[x] 支持纯ipv6 vps</p></li>
+<li><p>[x] 禁止BT</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>功能<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>一键 启动 / 停止 / 重启 V2ray 服务端</p></li>
+<li><p>流量统计(v2ray &amp;&amp; iptables)</p></li>
+<li><p>命令行模式管理v2ray</p></li>
+<li><p>支持多用户， 多端口管理</p></li>
+<li><p>开启关闭动态端口</p></li>
+<li><p>bittorrent的禁止与放行</p></li>
+<li><p>单端口, 范围端口的修改</p></li>
+<li><p>直接走Cloudcflare cdn</p></li>
+<li><p>开启关闭tcpFastOpen</p></li>
+<li><p>快速查看服务器连接信息, 常规配置修改</p></li>
+<li><p>自由更改<strong>传输配置</strong>：</p>
+<ul>
+<li><p>常规TCP</p></li>
+<li><p>HTTP头部伪装</p></li>
+<li><p>WebSocket流量</p></li>
+<li><p>常规mKCP流量</p></li>
+<li><p>mKCP 伪装 FaceTime通话流量(srt…</p></li>
+</ul>
+</li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/Jrohy/multi-v2ray">https://github.com/Jrohy/multi-v2ray</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-tmrowco-electricitymap-contrib">
+<h2>🤩Python随身听-技术精选： /tmrowco/electricitymap-contrib<a class="headerlink" href="#python-tmrowco-electricitymap-contrib" title="Permalink to this headline">¶</a></h2>
+<p>👉A real-time visualisation of the CO2 emissions of electricity consumption</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">sustainability,d3,data-visualization,climate-change,hacktoberfest</span></code></p>
+<p>⭐️STARS：1688, 今日上升数↑:15</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="electricitymap">
+<h2>electricityMap<a class="headerlink" href="#electricitymap" title="Permalink to this headline">¶</a></h2>
+<p>A real-time visualisation of the Greenhouse Gas (in terms of CO<sub>2</sub> equivalent) footprint of electricity consumption built with <a class="reference external" href="https://d3js.org/">d3.js</a> and <a class="reference external" href="https://github.com/mapbox/mapbox-gl-js/">mapbox GL</a>, maintained by <a class="reference external" href="https://www.tmrow.com">Tomorrow</a>. Try it out at <a class="reference external" href="http://www.electricitymap.org">http://www.electricitymap.org</a>, or download the app on <a class="reference external" href="https://play.google.com/store/apps/details?id=com.tmrow.electricitymap&amp;utm_source=github">Google Play</a> or <a class="reference external" href="https://itunes.apple.com/us/app/electricity-map/id1224594248&amp;utm_source=github">App store</a>.</p>
+<div class="section" id="contribute">
+<h3>Contribute<a class="headerlink" href="#contribute" title="Permalink to this headline">¶</a></h3>
+<p>Thank you for your interest. Check out the <a class="reference external" href="https://github.com/tmrowco/electricitymap-contrib/wiki">Wiki</a> for how to get started. Also have a look at our current <a class="reference external" href="https://github.com/tmrowco/electricitymap-contrib/issues">issues</a> and <a class="reference external" href="https://github.com/tmrowco/electricitymap-contrib/discussions">discussions</a></p>
+<p>Here are some of the ways you can contribute:</p>
+<ul class="simple">
+<li><p>[Building a new parser](https://github.com/tmrowco/elec…</p></li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/tmrowco/electricitymap-contrib">https://github.com/tmrowco/electricitymap-contrib</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-megadose-holehe">
+<h2>🤩Python随身听-技术精选： /megadose/holehe<a class="headerlink" href="#python-megadose-holehe" title="Permalink to this headline">¶</a></h2>
+<p>👉holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">information-gathering,osint,osint-tools,open-source-intelligence,python,email,social-network</span></code></p>
+<p>⭐️STARS：156, 今日上升数↑:19</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="holehe">
+<h2>Holehe<a class="headerlink" href="#holehe" title="Permalink to this headline">¶</a></h2>
+<p><a href="https://www.buymeacoffee.com/megadose" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a></p>
+</div>
+<div class="section" id="educational-purposes-only">
+<h2>Educational purposes only<a class="headerlink" href="#educational-purposes-only" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="if-you-have-any-suggestions-please-do-not-hesitate-to-contact-us">
+<h3>If you have any suggestions, please do not hesitate to contact us.<a class="headerlink" href="#if-you-have-any-suggestions-please-do-not-hesitate-to-contact-us" title="Permalink to this headline">¶</a></h3>
+<p>holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.</p>
+</div>
+<div class="section" id="project-example-holehe-maltego">
+<h3>Project example : <a class="reference external" href="https://github.com/megadose/holehe-maltego">Holehe Maltego</a><a class="headerlink" href="#project-example-holehe-maltego" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="demo">
+<h4>Demo<a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="prerequisite">
+<h3>💡 Prerequisite<a class="headerlink" href="#prerequisite" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.python.org/downloads/release/python-370/">Python 2/3</a></p>
+</div>
+<div class="section" id="installation">
+<h3>🛠️ Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="with-pypi">
+<h4>With PyPI<a class="headerlink" href="#with-pypi" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="with-github">
+<h4>With Github<a class="headerlink" href="#with-github" title="Permalink to this headline">¶</a></h4>
+<p>git clone https://github.com/megadose/holehe.git
+cd holehe/
+python3 setup.py install</p>
+</div>
+</div>
+<div class="section" id="example">
+<h3>📚 Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>holehe -e test&#64;gmail.com</p>
+</div>
+<div class="section" id="u">
+<h3>📈 U…<a class="headerlink" href="#u" title="Permalink to this headline">¶</a></h3>
+<p>地址：<a class="reference external" href="https://github.com/megadose/holehe">https://github.com/megadose/holehe</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-dennybritz-reinforcement-learning">
+<h2>🤩Python随身听-技术精选： /dennybritz/reinforcement-learning<a class="headerlink" href="#python-dennybritz-reinforcement-learning" title="Permalink to this headline">¶</a></h2>
+<p>👉Implementation of Reinforcement Learning Algorithms. Python, OpenAI Gym, Tensorflow. Exercises and Solutions to accompany Sutton’s Book and David Silver’s course.</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：15443, 今日上升数↑:51</p>
+<p>👉README：</p>
+<div class="section" id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<p>This repository provides code, exercises and solutions for popular Reinforcement Learning algorithms. These are meant to serve as a learning tool to complement the theoretical materials from</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://incompleteideas.net/book/RLbook2018.pdf">Reinforcement Learning: An Introduction (2nd Edition)</a></p></li>
+<li><p><a class="reference external" href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html">David Silver’s Reinforcement Learning Course</a></p></li>
+</ul>
+<p>Each folder in corresponds to one or more chapters of the above textbook and/or course. In addition to exercises and solution, each folder also contains a list of learning goals, a brief concept summary, and links to the relevant readings.</p>
+<p>All code is written in Python 3 and uses RL environments from <a class="reference external" href="https://gym.openai.com/">OpenAI Gym</a>. Advanced techniques use <a class="reference external" href="https://www.tensorflow.org/">Tensorflow</a> for neural network implementations.</p>
+</div>
+<div class="section" id="table-of-contents">
+<h3>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="xref myst">Introduction to RL problems &amp; OpenAI Gym</span></p></li>
+<li><p><span class="xref myst">MDPs and Bellman Equations</span></p></li>
+<li><p>[Dynamic Programming: Model-Based…</p></li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/dennybritz/reinforcement-learning">https://github.com/dennybritz/reinforcement-learning</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-simoninithomas-deep-reinforcement-learning-course">
+<h2>🤩Python随身听-技术精选： /simoninithomas/Deep_reinforcement_learning_Course<a class="headerlink" href="#python-simoninithomas-deep-reinforcement-learning-course" title="Permalink to this headline">¶</a></h2>
+<p>👉Implementations from the free course Deep Reinforcement Learning with Tensorflow and PyTorch</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">deep-reinforcement-learning,qlearning,deep-learning,tensorflow-tutorials,tensorflow,ppo,a2c,actor-critic,deep-q-network,deep-q-learning,pytorch,unity</span></code></p>
+<p>⭐️STARS：2582, 今日上升数↑:26</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="deep-reinforcement-learning-course">
+<h2><a class="reference external" href="https://simoninithomas.github.io/deep-rl-course/">Deep Reinforcement Learning Course</a><a class="headerlink" href="#deep-reinforcement-learning-course" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="the-new-version-of-deep-reinforcement-learning-course-starts-on-october-the-2nd-2020-more-info-here">
+<h2>⚠️ The new version of Deep Reinforcement Learning Course starts on October the 2nd 2020. <a class="reference external" href="https://medium.com/deep-reinforcement-learning-course/launching-deep-reinforcement-learning-course-v2-0-38fa3c24bcbc">➡️ More info here ⬅️</a><a class="headerlink" href="#the-new-version-of-deep-reinforcement-learning-course-starts-on-october-the-2nd-2020-more-info-here" title="Permalink to this headline">¶</a></h2>
+<img src="http://www.simoninithomas.com/deep-rl-course/assets/img/environments.jpg" alt="Deep Reinforcement Course with Tensorflow and PyTorcch" style="width: 500px;"/>
+</div>
+<div class="section" id="a-href-https-simoninithomas-github-io-deep-reinforcement-learning-course-syllabus-a-br">
+<h2><a href="https://simoninithomas.github.io/Deep_reinforcement_learning_Course/">Syllabus</a><br><a class="headerlink" href="#a-href-https-simoninithomas-github-io-deep-reinforcement-learning-course-syllabus-a-br" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="part-1-introduction-to-deeep-reinforcement-learning">
+<h3>Part 1: Introduction to Deeep Reinforcement Learning<a class="headerlink" href="#part-1-introduction-to-deeep-reinforcement-learning" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="article-introduction-to-deep-reinforcement-learning-br-br">
+<h4>📜 <a class="reference external" href="https://medium.com/&#64;thomassimonini/an-introduction-to-deep-reinforcement-learning-17a565999c0c?source=friends_link&amp;sk=1b1121ae5d9814a09ca38b47abc7dc61">ARTICLE Introduction to Deep Reinforcement Learning</a> <br><br><a class="headerlink" href="#article-introduction-to-deep-reinforcement-learning-br-br" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="video-introduction-to-deep-reinforcement-learning">
+<h4>📹 <a class="reference external" href="https://youtu.be/q0BiUn5LiBc">VIDEO Introduction to Deep Reinforcement Learning</a><a class="headerlink" href="#video-introduction-to-deep-reinforcement-learning" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="part-2-q-learning-with-frozenlake-br">
+<h3>Part 2: Q-learning with FrozenLake <br><a class="headerlink" href="#part-2-q-learning-with-frozenlake-br" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="article-h">
+<h4>📜 [ARTICLE](h…<a class="headerlink" href="#article-h" title="Permalink to this headline">¶</a></h4>
+<p>地址：<a class="reference external" href="https://github.com/simoninithomas/Deep_reinforcement_learning_Course">https://github.com/simoninithomas/Deep_reinforcement_learning_Course</a></p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-fastai-fastbook">
+<h2>🤩Python随身听-技术精选： /fastai/fastbook<a class="headerlink" href="#python-fastai-fastbook" title="Permalink to this headline">¶</a></h2>
+<p>👉The fastai book, published as Jupyter Notebooks</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">notebooks,fastai,deep-learning,machine-learning,data-science,python,book</span></code></p>
+<p>⭐️STARS：9654, 今日上升数↑:13</p>
+<p>👉README：</p>
+<p><span class="xref myst">English</span> / <span class="xref myst">Spanish</span> / <span class="xref myst">Korean</span> / <span class="xref myst">Chinese</span></p>
+</div>
+<div class="section" id="the-fastai-book">
+<h2>The fastai book<a class="headerlink" href="#the-fastai-book" title="Permalink to this headline">¶</a></h2>
+<p>These notebooks cover an introduction to deep learning, <a class="reference external" href="https://docs.fast.ai/">fastai</a>, and <a class="reference external" href="https://pytorch.org/">PyTorch</a>. fastai is a layered API for deep learning; for more information, see <a class="reference external" href="https://www.mdpi.com/2078-2489/11/2/108">the fastai paper</a>. Everything in this repo is copyright Jeremy Howard and Sylvain Gugger, 2020 onwards.</p>
+<p>These notebooks are  used for <a class="reference external" href="https://course.fast.ai">a MOOC</a> and form the basis of <a class="reference external" href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527">this book</a>, which is currently available for purchase. It does not have the same GPL restrictions that are on this draft.</p>
+<p>The code in the notebooks and python <code class="docutils literal notranslate"><span class="pre">.py</span></code> files is covered by the GPL v3 license; see the LICENSE file for details.</p>
+<p>The remainder (including all markdown cells in the notebooks and other prose) is not licensed for any redistribution or change of format or medium, other …</p>
+<p>地址：<a class="reference external" href="https://github.com/fastai/fastbook">https://github.com/fastai/fastbook</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-aliaksandrsiarohin-first-order-model">
+<h2>🤩Python随身听-技术精选： /AliaksandrSiarohin/first-order-model<a class="headerlink" href="#python-aliaksandrsiarohin-first-order-model" title="Permalink to this headline">¶</a></h2>
+<p>👉This repository contains the source code for the paper First Order Motion Model for Image Animation</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">deep-learning,image-animation,generative-model,motion-retargeting</span></code></p>
+<p>⭐️STARS：8023, 今日上升数↑:24</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="first-order-motion-model-for-image-animation">
+<h2>First Order Motion Model for Image Animation<a class="headerlink" href="#first-order-motion-model-for-image-animation" title="Permalink to this headline">¶</a></h2>
+<p>This repository contains the source code for the paper <a class="reference external" href="https://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation">First Order Motion Model for Image Animation</a> by Aliaksandr Siarohin, <a class="reference external" href="http://stelat.eu">Stéphane Lathuilière</a>, <a class="reference external" href="http://stulyakov.com">Sergey Tulyakov</a>, <a class="reference external" href="http://elisaricci.eu/">Elisa Ricci</a> and <a class="reference external" href="http://disi.unitn.it/~sebe/">Nicu Sebe</a>.</p>
+<div class="section" id="example-animations">
+<h3>Example animations<a class="headerlink" href="#example-animations" title="Permalink to this headline">¶</a></h3>
+<p>The videos on the left show the driving videos. The first row on the right for each dataset shows the source videos. The bottom row contains the animated sequences with motion transferred from the driving video and object taken from the source image. We trained a separate network for each task.</p>
+<div class="section" id="voxceleb-dataset">
+<h4>VoxCeleb Dataset<a class="headerlink" href="#voxceleb-dataset" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="fashion-dataset">
+<h4>Fashion Dataset<a class="headerlink" href="#fashion-dataset" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="mgif-dataset">
+<h4>MGIF Dataset<a class="headerlink" href="#mgif-dataset" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="id7">
+<h4>Installation<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p>We support <code class="docutils literal notranslate"><span class="pre">python3</span></code>. To install the dependencies run:
+pip install -r requirements.txt</p>
+</div>
+<div class="section" id="yaml-configs">
+<h4>YAML configs<a class="headerlink" href="#yaml-configs" title="Permalink to this headline">¶</a></h4>
+<p>There are several configuration (<code class="docutils literal notranslate"><span class="pre">config/dataset_name.yaml</span></code>) files one for each `da…</p>
+<p>地址：<a class="reference external" href="https://github.com/AliaksandrSiarohin/first-order-model">https://github.com/AliaksandrSiarohin/first-order-model</a></p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-jakevdp-pythondatasciencehandbook">
+<h2>🤩Python随身听-技术精选： /jakevdp/PythonDataScienceHandbook<a class="headerlink" href="#python-jakevdp-pythondatasciencehandbook" title="Permalink to this headline">¶</a></h2>
+<p>👉Python Data Science Handbook: full text in Jupyter Notebooks</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">scikit-learn,numpy,python,jupyter-notebook,matplotlib,pandas</span></code></p>
+<p>⭐️STARS：25864, 今日上升数↑:16</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="python-data-science-handbook">
+<h2>Python Data Science Handbook<a class="headerlink" href="#python-data-science-handbook" title="Permalink to this headline">¶</a></h2>
+<p>This repository contains the entire <a class="reference external" href="http://shop.oreilly.com/product/0636920034919.do">Python Data Science Handbook</a>, in the form of (free!) Jupyter notebooks.</p>
+<div class="section" id="how-to-use-this-book">
+<h3>How to Use this Book<a class="headerlink" href="#how-to-use-this-book" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Read the book in its entirety online at https://jakevdp.github.io/PythonDataScienceHandbook/</p></li>
+<li><p>Run the code using the Jupyter notebooks available in this repository’s <a class="reference internal" href="notebooks.html"><span class="doc std std-doc">notebooks</span></a> directory.</p></li>
+<li><p>Buy the printed book through <a class="reference external" href="http://shop.oreilly.com/product/0636920034919.do">O’Reilly Media</a></p></li>
+</ul>
+</div>
+<div class="section" id="about">
+<h3>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h3>
+<p>The book was written and tested with Python 3.5, though other Python versions (including Python 2.7) should work in nearly all cases.</p>
+<p>The book introduces the core libraries essential for working with data in Python: particularly <a class="reference external" href="http://ipython.org">IPython</a>, <a class="reference external" href="http://numpy.org">NumPy</a>, <a class="reference external" href="http://pandas.pydata.org">Pandas</a>, <a class="reference external" href="http://matplotlib.org">Matplotlib</a>, <a class="reference external" href="http://scikit-learn.org">Scikit-Learn</a>, and related packages.
+Familiarity with Python as a language is assumed; if you need…</p>
+<p>地址：<a class="reference external" href="https://github.com/jakevdp/PythonDataScienceHandbook">https://github.com/jakevdp/PythonDataScienceHandbook</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-coreymschafer-code-snippets">
+<h2>🤩Python随身听-技术精选： /CoreyMSchafer/code_snippets<a class="headerlink" href="#python-coreymschafer-code-snippets" title="Permalink to this headline">¶</a></h2>
+<p>👉None</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：5858, 今日上升数↑:14</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="code">
+<h2>code_…<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<p>地址：<a class="reference external" href="https://github.com/CoreyMSchafer/code_snippets">https://github.com/CoreyMSchafer/code_snippets</a></p>
+<hr class="docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="2020-10-12.html" title="previous page">Python随身听-2020-10-12-技术精选</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By DE8UG<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            更多内容与问题讨论请到「Python随身听」<image width=80 src="https://upload.jianshu.io/users/qrcodes/543964/%E5%BE%AE%E4%BF%A1-%E7%AC%AC8%E5%93%A5.jpg">
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="my_static/js/index.js"></script>
+    
+  </body>
+</html>

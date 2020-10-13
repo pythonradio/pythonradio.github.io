@@ -1,0 +1,1241 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python随身听-2020-10-08-技术精选 &#8212; Python随身听官方网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="my_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="my_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="my_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="my_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="my_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="./" src="my_static/documentation_options.js"></script>
+    <script src="my_static/jquery.js"></script>
+    <script src="my_static/underscore.js"></script>
+    <script src="my_static/doctools.js"></script>
+    <script src="my_static/language_data.js"></script>
+    <script src="my_static/togglebutton.js"></script>
+    <script src="my_static/clipboard.min.js"></script>
+    <script src="my_static/copybutton.js"></script>
+    <script src="my_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="my_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Python随身听-2020-10-09-技术精选" href="2020-10-09.html" />
+    <link rel="prev" title="Python随身听-2020-10-07-技术精选" href="2020-10-07.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="my_static/logo-pythonradio.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python随身听官方网站</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   欢迎来到Python随身听【音频直接听←】
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="content.html">
+   →技术精选
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-01.html">
+     Python随身听-2020-10-01-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-02.html">
+     Python随身听-2020-10-02-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-03.html">
+     Python随身听-2020-10-03-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-05.html">
+     Python随身听-2020-10-05-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-06.html">
+     Python随身听-2020-10-06-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-07.html">
+     Python随身听-2020-10-07-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python随身听-2020-10-08-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-09.html">
+     Python随身听-2020-10-09-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-10.html">
+     Python随身听-2020-10-10-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-11.html">
+     Python随身听-2020-10-11-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-12.html">
+     Python随身听-2020-10-12-技术精选
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2020-10-13.html">
+     Python随身听-2020-10-13-技术精选
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/2020-10-08.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-thealgorithms-python">
+   🤩Python随身听-技术精选： /TheAlgorithms/Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-algorithms-python">
+   The Algorithms - Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#all-algorithms-implemented-in-python-for-education">
+     All algorithms implemented in Python (for education)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contribution-g">
+     Contribution G…
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-eriklindernoren-ml-from-scratch">
+   🤩Python随身听-技术精选： /eriklindernoren/ML-From-Scratch
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#machine-learning-from-scratch">
+   Machine Learning From Scratch
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about">
+     About
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table-of-contents">
+     Table of Contents
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-asabeneh-30-days-of-python">
+   🤩Python随身听-技术精选： /Asabeneh/30-Days-Of-Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#days-of-python">
+   🐍 30 Days Of Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-nvbn-thefuck">
+   🤩Python随身听-技术精选： /nvbn/thefuck
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-timoschick-pet">
+   🤩Python随身听-技术精选： /timoschick/pet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pattern-exploiting-training-pet">
+   Pattern-Exploiting Training (PET)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-openai-gym">
+   🤩Python随身听-技术精选： /openai/gym
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-mxrch-ghunt">
+   🤩Python随身听-技术精选： /mxrch/GHunt
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#description">
+   Description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#screenshots">
+   Screenshots
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#latest-news">
+     📰 Latest news
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installatio">
+   Installatio…
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-streamlit-streamlit">
+   🤩Python随身听-技术精选： /streamlit/streamlit
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#welcome-to-streamlit-wave">
+   Welcome to Streamlit :wave:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-hamuchiwa-autorccar">
+   🤩Python随身听-技术精选： /hamuchiwa/AutoRCCar
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#autorccar">
+     AutoRCCar
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python3-opencv3">
+       Python3 + OpenCV3
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#setting-up-environment-with-anaconda">
+       Setting up environment with Anaconda
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-huggingface-transformers">
+   🤩Python随身听-技术精选： /huggingface/transformers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-django-django">
+   🤩Python随身听-技术精选： /django/django
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-matplotlib-matplotlib">
+   🤩Python随身听-技术精选： /matplotlib/matplotlib
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-argusswift-yolov4-pytorch">
+   🤩Python随身听-技术精选： /argusswift/YOLOv4-pytorch
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#yolov4-pytorch-attentive-yolov4-and-mobilenetv3-yolov4">
+   YOLOv4-pytorch (attentive YOLOv4 and Mobilenetv3 YOLOv4)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#results-updating">
+     Results(updating)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#update">
+     Update!!!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#news">
+     News!!!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#highlights">
+     Highlights
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#yolov4-attentive-yolov4-and-mobilenet-yolov4-with-some-useful-module">
+       YOLOv4 (attentive YOLOv4 and Mobilenet-YOLOv4) with some useful module
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-google-research-bert">
+   🤩Python随身听-技术精选： /google-research/bert
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bert">
+   BERT
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-bridgecrewio-checkov">
+   🤩Python随身听-技术精选： /bridgecrewio/checkov
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-lyhue1991-eat-pytorch-in-20-days">
+   🤩Python随身听-技术精选： /lyhue1991/eat_pytorch_in_20_days
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-eat-pytorch-in-20-days">
+   How to eat Pytorch in 20 days ?🔥🔥
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pytorch-or-tensorflow2">
+     一， Pytorch🔥  or TensorFlow2 🍎
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tensorflow2-https-github-com-lyhue1991">
+       🍊《30天吃掉那只TensorFlow2》：https://github.com/lyhue1991…
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-slundberg-shap">
+   🤩Python随身听-技术精选： /slundberg/shap
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install">
+     Install
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-hardikkamboj-an-introduction-to-statistical-learning">
+   🤩Python随身听-技术精选： /hardikkamboj/An-Introduction-to-Statistical-Learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-introduction-to-statistical-learning">
+   An-Introduction-to-Statistical-Learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-jantic-deoldify">
+   🤩Python随身听-技术精选： /jantic/DeOldify
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deoldify">
+   DeOldify
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-pierian-data-complete-python-3-bootcamp">
+   🤩Python随身听-技术精选： /Pierian-Data/Complete-Python-3-Bootcamp
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#complete-python-3-bootcamp">
+   Complete-Python-3-Bootcamp
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-eladrich-pixel2style2pixel">
+   🤩Python随身听-技术精选： /eladrich/pixel2style2pixel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#encoding-in-style-a-stylegan-encoder-for-image-to-image-translation">
+   Encoding in Style: a StyleGAN Encoder for Image-to-Image Translation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-dragen1860-deep-learning-with-tensorflow-book">
+   🤩Python随身听-技术精选： /dragen1860/Deep-Learning-with-TensorFlow-book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tensorflow-2-0">
+   TensorFlow 2.0深度学习开源书(龙书)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   合作院校
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-2020-10-08">
+<h1>Python随身听-2020-10-08-技术精选<a class="headerlink" href="#python-2020-10-08" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>致读者：亲爱的「Python随身听」的观众们，这是由DE8UG的人工非智能给你带来的新的一期技术精选。<br />
+主要为编程初学者，开发工程师，算法工程师，数据分析师，运维，测试，运营，产品等各个岗位的Python爱好者带来Python世界的流行趋势，前沿技术。<br />
+你可以挑选自己喜欢的项目尽情玩耍，任何想法欢迎留言讨论。<br />
+本文的结构和内容会经常更新，每天10：24分左右发布，感谢订阅🆙和收藏☆。<br />
+（点击原文或到pythonradio.online网站查看可点击的文档链接）</p>
+</div></blockquote>
+<p><img alt="" src="https://img2020.cnblogs.com/blog/152871/202010/152871-20201005104055252-1408177983.png" /></p>
+<div class="section" id="python-thealgorithms-python">
+<h2>🤩Python随身听-技术精选： /TheAlgorithms/Python<a class="headerlink" href="#python-thealgorithms-python" title="Permalink to this headline">¶</a></h2>
+<p>👉All Algorithms implemented in Python</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,algorithm,algorithms-implemented,algorithm-competitions,algos,sorts,searches,sorting-algorithms,education,learn,practice,community-driven,interview,hacktoberfest</span></code></p>
+<p>⭐️STARS：88163, 今日上升数↑:406</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="the-algorithms-python">
+<h2>The Algorithms - Python<a class="headerlink" href="#the-algorithms-python" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="all-algorithms-implemented-in-python-for-education">
+<h3>All algorithms implemented in Python (for education)<a class="headerlink" href="#all-algorithms-implemented-in-python-for-education" title="Permalink to this headline">¶</a></h3>
+<p>These implementations are for learning purposes. They may be less efficient than the implementations in the Python standard library.</p>
+</div>
+<div class="section" id="contribution-g">
+<h3>Contribution G…<a class="headerlink" href="#contribution-g" title="Permalink to this headline">¶</a></h3>
+<p>地址：<a class="reference external" href="https://github.com/TheAlgorithms/Python">https://github.com/TheAlgorithms/Python</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-eriklindernoren-ml-from-scratch">
+<h2>🤩Python随身听-技术精选： /eriklindernoren/ML-From-Scratch<a class="headerlink" href="#python-eriklindernoren-ml-from-scratch" title="Permalink to this headline">¶</a></h2>
+<p>👉Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">machine-learning,deep-learning,deep-reinforcement-learning,machine-learning-from-scratch,data-science,data-mining,genetic-algorithm</span></code></p>
+<p>⭐️STARS：17447, 今日上升数↑:371</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="machine-learning-from-scratch">
+<h2>Machine Learning From Scratch<a class="headerlink" href="#machine-learning-from-scratch" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="about">
+<h3>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h3>
+<p>Python implementations of some of the fundamental Machine Learning models and algorithms from scratch.</p>
+<p>The purpose of this project is not to produce as optimized and computationally efficient algorithms as possible
+but rather to present the inner workings of them in a transparent and accessible way.</p>
+</div>
+<div class="section" id="table-of-contents">
+<h3>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="#machine-learning-from-scratch">Machine Learning From Scratch</a></p>
+<ul>
+<li><p><a class="reference external" href="#about">About</a></p></li>
+<li><p><a class="reference external" href="#table-of-contents">Table of Contents</a></p></li>
+<li><p><a class="reference external" href="#installation">Installation</a></p></li>
+<li><p><a class="reference external" href="#examples">Examples</a></p>
+<ul>
+<li><p><a class="reference external" href="#polynomial-regression">Polynomial Regression</a></p></li>
+<li><p><a class="reference external" href="#classification-with-cnn">Classification With CNN</a></p></li>
+<li><p><a class="reference external" href="#density-based-clustering">Density-Based Clustering</a></p></li>
+<li><p><a class="reference external" href="#generating-handwritten-digits">Generating Handwritten Digits</a></p></li>
+<li><p><a class="reference external" href="#deep-reinforcement-learning">Deep Reinforcement Learning</a></p></li>
+<li><p><a class="reference external" href="#image-reconstruction-with-rbm">Image Reconstruction With RBM</a></p></li>
+<li><p><a class="reference external" href="#evolutionary-evolved-neural-network">Evolutionary Evolved Neural Network</a>
++…</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>地址：<a class="reference external" href="https://github.com/eriklindernoren/ML-From-Scratch">https://github.com/eriklindernoren/ML-From-Scratch</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-asabeneh-30-days-of-python">
+<h2>🤩Python随身听-技术精选： /Asabeneh/30-Days-Of-Python<a class="headerlink" href="#python-asabeneh-30-days-of-python" title="Permalink to this headline">¶</a></h2>
+<p>👉30 days of Python programming challenge is a step by step guide to learn Python programming language in 30 days.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">30-days-of-python,python</span></code></p>
+<p>⭐️STARS：1660, 今日上升数↑:210</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="days-of-python">
+<h2>🐍 30 Days Of Python<a class="headerlink" href="#days-of-python" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p># Day</p></th>
+<th class="text-align:center head"><p>Topics</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td class="text-align:center"><p><span class="xref myst">Introduction</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td class="text-align:center"><p><span class="xref myst">Variables, Built-in Functions</span></p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td class="text-align:center"><p><span class="xref myst">Operators</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td class="text-align:center"><p><span class="xref myst">Strings</span></p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td class="text-align:center"><p><span class="xref myst">Lists</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td class="text-align:center"><p><span class="xref myst">Tuples</span></p></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td class="text-align:center"><p><span class="xref myst">Sets</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td class="text-align:center"><p><span class="xref myst">Dictionaries</span></p></td>
+</tr>
+<tr class="row-even"><td><p>09</p></td>
+<td class="text-align:center"><p><span class="xref myst">Conditionals</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td class="text-align:center"><p><span class="xref myst">Loops</span></p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td class="text-align:center"><p><span class="xref myst">Functions</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td class="text-align:center"><p><span class="xref myst">Modules</span></p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td class="text-align:center"><p>[List Comprehension](../13_Day_Li…</p></td>
+</tr>
+</tbody>
+</table>
+<p>地址：<a class="reference external" href="https://github.com/Asabeneh/30-Days-Of-Python">https://github.com/Asabeneh/30-Days-Of-Python</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-nvbn-thefuck">
+<h2>🤩Python随身听-技术精选： /nvbn/thefuck<a class="headerlink" href="#python-nvbn-thefuck" title="Permalink to this headline">¶</a></h2>
+<p>👉Magnificent app which corrects your previous console command.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,shell</span></code></p>
+<p>⭐️STARS：56167, 今日上升数↑:184</p>
+<p>👉README：</p>
+<p><em>The Fuck</em> is a magnificent app, inspired by a <a class="reference external" href="https://twitter.com/liamosaur/">&#64;liamosaur</a>
+<a class="reference external" href="https://twitter.com/liamosaur/status/506975850596536320">tweet</a>,
+that corrects errors in previous console commands.</p>
+<p>Is <em>The Fuck</em> too slow? <a class="reference external" href="#experimental-instant-mode">Try the experimental instant mode!</a></p>
+<p>More examples:</p>
+<p>➜ apt-get install vim
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?</p>
+<p>➜ fuck
+sudo apt-get install vim [enter/↑/↓/ctrl+c]
+[sudo] password for nvbn:
+Reading package lists… Done
+…</p>
+<p>➜ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git push --set-upstream origin master
+</pre></div>
+</div>
+<p>➜ fuck
+git push –set-upstream origin master [enter/↑/↓/ctrl+c]
+Counting objects: 9, done.
+…</p>
+<p>➜ puthon
+No command ‘puthon’ found, did you mean:
+Command ‘python’ from package ‘python-minimal’ (main)
+Command ‘python’ from package ‘pyth…</p>
+<p>地址：<a class="reference external" href="https://github.com/nvbn/thefuck">https://github.com/nvbn/thefuck</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-timoschick-pet">
+<h2>🤩Python随身听-技术精选： /timoschick/pet<a class="headerlink" href="#python-timoschick-pet" title="Permalink to this headline">¶</a></h2>
+<p>👉This repository contains the code for “Exploiting Cloze Questions for Few-Shot Text Classification and Natural Language Inference”</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">nlp,python,machine-learning</span></code></p>
+<p>⭐️STARS：444, 今日上升数↑:168</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="pattern-exploiting-training-pet">
+<h2>Pattern-Exploiting Training (PET)<a class="headerlink" href="#pattern-exploiting-training-pet" title="Permalink to this headline">¶</a></h2>
+<p>This repository contains the code for <a class="reference external" href="https://arxiv.org/abs/2001.07676">Exploiting Cloze Questions for Few-Shot Text Classification and Natural Language Inference</a> and <a class="reference external" href="https://arxiv.org/abs/2009.07118">It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners</a>. The papers introduce pattern-exploiting training (PET), a semi-supervised training procedure that reformulates input examples as cloze-style phrases. In low-resource settings, PET and iPET significantly outperform regular supervised training, various semi-supervised baselines and even GPT-3 despite requiring 99.9% less parameters. The iterative variant of PET (iPET) trains multiple generations of models and can even be used without any training data.</p>
+<table>
+    <tr>
+        <th>#Examples</th>
+        <th>Training Mode</th>
+        <th>Yelp (Full)</th>
+        <th>AG's News</th>
+        <th>Yahoo Questions</th>
+        <th>MNLI</th>
+    </tr>
+    <tr>
+        <td rowspan="2" align="center...
+<p>地址：<a class="reference external" href="https://github.com/timoschick/pet">https://github.com/timoschick/pet</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-openai-gym">
+<h2>🤩Python随身听-技术精选： /openai/gym<a class="headerlink" href="#python-openai-gym" title="Permalink to this headline">¶</a></h2>
+<p>👉A toolkit for developing and comparing reinforcement learning algorithms.</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：22316, 今日上升数↑:17</p>
+<p>👉README：</p>
+<p><strong>Status:</strong> Maintenance (expect bug fixes and minor updates)</p>
+<p>OpenAI Gym</p>
+<hr class="docutils" />
+<p><strong>OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms.</strong> This is the <code class="docutils literal notranslate"><span class="pre">gym</span></code> open-source library, which gives you access to a standardized set of environments.</p>
+<p>.. image:: https://travis-ci.org/openai/gym.svg?branch=master
+:target: https://travis-ci.org/openai/gym</p>
+<p><code class="docutils literal notranslate"><span class="pre">See</span> <span class="pre">What's</span> <span class="pre">New</span> <span class="pre">section</span> <span class="pre">below</span> <span class="pre">&lt;#what-s-new&gt;</span></code>_</p>
+<p><code class="docutils literal notranslate"><span class="pre">gym</span></code> makes no assumptions about the structure of your agent, and is compatible with any numerical computation library, such as TensorFlow or Theano. You can use it from Python code, and soon from other languages.</p>
+<p>If you’re not sure where to start, we recommend beginning with the
+<code class="docutils literal notranslate"><span class="pre">docs</span> <span class="pre">&lt;https://gym.openai.com/docs&gt;</span></code>_ on our site. See also the <code class="docutils literal notranslate"><span class="pre">FAQ</span> <span class="pre">&lt;https://github.com/openai/gym/wiki/FAQ&gt;</span></code>_.</p>
+<p>A whitepaper for OpenAI Gym is available at http://arxiv.org/abs/1606.01540, and here’s a BibTeX entry that you can use to cite it in a publication::</p>
+<p>&#64;misc{1606.01540,
+Author = {Greg…</p>
+<p>地址：<a class="reference external" href="https://github.com/openai/gym">https://github.com/openai/gym</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-mxrch-ghunt">
+<h2>🤩Python随身听-技术精选： /mxrch/GHunt<a class="headerlink" href="#python-mxrch-ghunt" title="Permalink to this headline">¶</a></h2>
+<p>👉🕵️‍♂️ Investigate Google Accounts with emails.</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：3125, 今日上升数↑:266</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>GHunt is an OSINT tool to extract information from any Google Account using an email.</p>
+<p>It can currently extract:</p>
+<ul class="simple">
+<li><p>Owner’s name</p></li>
+<li><p>Last time the profile was edited</p></li>
+<li><p>Google ID</p></li>
+<li><p>If the account is a Hangouts Bot</p></li>
+<li><p>Activated Google services (YouTube, Photos, Maps, News360, Hangouts, etc.)</p></li>
+<li><p>Possible YouTube channel</p></li>
+<li><p>Possible other usernames</p></li>
+<li><p>Public photos</p></li>
+<li><p>Phone models</p></li>
+<li><p>Phone firmwares</p></li>
+<li><p>Installed software</p></li>
+<li><p>Google Maps reviews</p></li>
+<li><p>Possible physical location</p></li>
+</ul>
+</div>
+<div class="section" id="screenshots">
+<h2>Screenshots<a class="headerlink" href="#screenshots" title="Permalink to this headline">¶</a></h2>
+<p align="center">
+  <img src="https://files.catbox.moe/2zb1z9.png">
+</p>
+<div class="section" id="latest-news">
+<h3>📰 Latest news<a class="headerlink" href="#latest-news" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>02/10/2020</strong> : Since few days ago, Google return a 404 when we try to access someone’s Google Photos public albums, we can only access it if we have a link of one of his albums.<br />
+Either this is a bug and this will be fixed, either it’s a protection that we need to find how to bypass.</p></li>
+<li><p><strong>03/10/2020</strong> : Successfully bypassed. 🕺 (commit 01dc016)<br />
+It requires the “Profile photos” album to be public (it is by default)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="installatio">
+<h2>Installatio…<a class="headerlink" href="#installatio" title="Permalink to this headline">¶</a></h2>
+<p>地址：<a class="reference external" href="https://github.com/mxrch/GHunt">https://github.com/mxrch/GHunt</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-streamlit-streamlit">
+<h2>🤩Python随身听-技术精选： /streamlit/streamlit<a class="headerlink" href="#python-streamlit-streamlit" title="Permalink to this headline">¶</a></h2>
+<p>👉Streamlit — The fastest way to build data apps in Python</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,machine-learning,data-science,deep-learning,data-visualization,streamlit,data-analysis</span></code></p>
+<p>⭐️STARS：11241, 今日上升数↑:21</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="welcome-to-streamlit-wave">
+<h2>Welcome to Streamlit :wave:<a class="headerlink" href="#welcome-to-streamlit-wave" title="Permalink to this headline">¶</a></h2>
+<p><strong>The fastest way to build data apps.</strong></p>
+<p>Streamlit lets you create apps for your machine learning projects with deceptively simple Python scripts. It supports hot-reloading, so your app updates live as you edit and save your file. No need to mess with HTTP requests, HTML, JavaScript, etc. All you need is your favorite editor and a browser. Take a look at Streamlit in action:</p>
+<p><strong>Check out our <a class="reference external" href="https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace">launch blog post</a>!!</strong></p>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>pip install streamlit
+streamlit hello</p>
+<p>We also have suggestions for installing Streamlit in a virtual environment in <a class="reference external" href="https://github.com/streamlit/streamlit/wiki/Installing-in-a-virtual-environment#on-windows">Windows</a>, <a class="reference external" href="https://github.com/streamlit/streamlit/wiki/Installing-in-a-virtual-environment#on-mac--linux">Mac</a>, and <a class="reference external" href="https://github.com/streamlit/streamlit/wiki/Installing-in-a-virtual-environment#on-mac--linux">Linux</a>.</p>
+</div>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>Streamlit lets you build…</p>
+<p>地址：<a class="reference external" href="https://github.com/streamlit/streamlit">https://github.com/streamlit/streamlit</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-hamuchiwa-autorccar">
+<h2>🤩Python随身听-技术精选： /hamuchiwa/AutoRCCar<a class="headerlink" href="#python-hamuchiwa-autorccar" title="Permalink to this headline">¶</a></h2>
+<p>👉OpenCV Python Neural Network Autonomous RC Car</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：2766, 今日上升数↑:12</p>
+<p>👉README：</p>
+<div class="section" id="autorccar">
+<h3>AutoRCCar<a class="headerlink" href="#autorccar" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="python3-opencv3">
+<h4>Python3 + OpenCV3<a class="headerlink" href="#python3-opencv3" title="Permalink to this headline">¶</a></h4>
+<p>See self-driving in action</p>
+<p><a href="http://www.youtube.com/watch?feature=player_embedded&v=BBwEF6WBUQs
+" target="_blank"><img src="http://img.youtube.com/vi/BBwEF6WBUQs/0.jpg" width="360" height="240" border="10" /></a></p>
+<p>This project builds a self-driving RC car using Raspberry Pi, Arduino and open source software. Raspberry Pi collects inputs from a camera module and an ultrasonic sensor, and sends data to a computer wirelessly. The computer processes input images and sensor data for object detection (stop sign and traffic light) and collision avoidance respectively. A neural network model runs on computer and makes predictions for steering based on input images. Predictions are then sent to the Arduino for RC car control.</p>
+</div>
+<div class="section" id="setting-up-environment-with-anaconda">
+<h4>Setting up environment with Anaconda<a class="headerlink" href="#setting-up-environment-with-anaconda" title="Permalink to this headline">¶</a></h4>
+<ol>
+<li><p>Install <a class="reference external" href="https://conda.io/miniconda.html"><code class="docutils literal notranslate"><span class="pre">miniconda(Python3)</span></code></a> on your computer</p></li>
+<li><p>Create <code class="docutils literal notranslate"><span class="pre">auto-rccar</span></code> environment with all necessary libraries for this project</p>
+<div class="highlight-conda notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>地址：<a class="reference external" href="https://github.com/hamuchiwa/AutoRCCar">https://github.com/hamuchiwa/AutoRCCar</a></p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-huggingface-transformers">
+<h2>🤩Python随身听-技术精选： /huggingface/transformers<a class="headerlink" href="#python-huggingface-transformers" title="Permalink to this headline">¶</a></h2>
+<p>👉🤗Transformers: State-of-the-art Natural Language Processing for Pytorch and TensorFlow 2.0.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">nlp,natural-language-processing,natural-language-understanding,pytorch,language-model,natural-language-generation,tensorflow,bert,gpt,xlnet,language-models,xlm,transformer-xl,pytorch-transformers</span></code></p>
+<p>⭐️STARS：34672, 今日上升数↑:43</p>
+<p>👉README：</p>
+<p align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/huggingface/transformers/master/docs/source/imgs/transformers_logo_name.png" width="400"/>
+    <br>
+<p>
+<p align="center">
+    <a href="https://circleci.com/gh/huggingface/transformers">
+        <img alt="Build" src="https://img.shields.io/circleci/build/github/huggingface/transformers/master">
+    </a>
+    <a href="https://github.com/huggingface/transformers/blob/master/LICENSE">
+        <img alt="GitHub" src="https://img.shields.io/github/license/huggingface/transformers.svg?color=blue">
+    </a>
+    <a href="https://huggingface.co/transformers/index.html">
+        <img alt="Documentation" src="https://img.shields.io/website/http/huggingface.co/transformers/index.html.svg?down_color=red&down_message=offline&up_message=online">
+    </a>
+    <a href="https://github.com/huggingface/transformers/releases">
+        <img alt="GitHub release" src="https://img.shields.io/github/release/huggingface/transformers.svg">
+    </a>
+    <a href="ht...
+<p>地址：<a class="reference external" href="https://github.com/huggingface/transformers">https://github.com/huggingface/transformers</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-django-django">
+<h2>🤩Python随身听-技术精选： /django/django<a class="headerlink" href="#python-django-django" title="Permalink to this headline">¶</a></h2>
+<p>👉The Web framework for perfectionists with deadlines.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">python,django,web,framework,orm,templates,models,views,apps,hacktoberfest</span></code></p>
+<p>⭐️STARS：52693, 今日上升数↑:23</p>
+<p>👉README：</p>
+<p>Django</p>
+<p>Django is a high-level Python Web framework that encourages rapid development
+and clean, pragmatic design. Thanks for checking it out.</p>
+<p>All documentation is in the “<code class="docutils literal notranslate"><span class="pre">docs</span></code>” directory and online at
+https://docs.djangoproject.com/en/stable/. If you’re just getting started,
+here’s how we recommend you read the docs:</p>
+<ul class="simple">
+<li><p>First, read <code class="docutils literal notranslate"><span class="pre">docs/intro/install.txt</span></code> for instructions on installing Django.</p></li>
+<li><p>Next, work through the tutorials in order (<code class="docutils literal notranslate"><span class="pre">docs/intro/tutorial01.txt</span></code>,
+<code class="docutils literal notranslate"><span class="pre">docs/intro/tutorial02.txt</span></code>, etc.).</p></li>
+<li><p>If you want to set up an actual deployment server, read
+<code class="docutils literal notranslate"><span class="pre">docs/howto/deployment/index.txt</span></code> for instructions.</p></li>
+<li><p>You’ll probably want to read through the topical guides (in <code class="docutils literal notranslate"><span class="pre">docs/topics</span></code>)
+next; from there you can jump to the HOWTOs (in <code class="docutils literal notranslate"><span class="pre">docs/howto</span></code>) for specific
+problems, and check out the reference (<code class="docutils literal notranslate"><span class="pre">docs/ref</span></code>) for gory details.</p></li>
+<li><p>See <code class="docutils literal notranslate"><span class="pre">docs/README</span></code> for instructions on building an HTML version of the docs.</p></li>
+</ul>
+<p>Docs are updated rigorously. If you find any problems in the docs, or th…</p>
+<p>地址：<a class="reference external" href="https://github.com/django/django">https://github.com/django/django</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-matplotlib-matplotlib">
+<h2>🤩Python随身听-技术精选： /matplotlib/matplotlib<a class="headerlink" href="#python-matplotlib-matplotlib" title="Permalink to this headline">¶</a></h2>
+<p>👉matplotlib: plotting with Python</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">hacktoberfest</span></code></p>
+<p>⭐️STARS：12379, 今日上升数↑:35</p>
+<p>👉README：</p>
+<p>|PyPi|_ |Downloads|_ |NUMFocus|_</p>
+<p>|DiscourseBadge|_ |Gitter|_ |GitHubIssues|_ |GitTutorial|_</p>
+<p>|Travis|_ |AzurePipelines|_ |AppVeyor|_ |Codecov|_ |LGTM|_</p>
+<p>.. |Travis| image:: https://travis-ci.com/matplotlib/matplotlib.svg?branch=master
+.. _Travis: https://travis-ci.com/matplotlib/matplotlib</p>
+<p>.. |AzurePipelines| image:: https://dev.azure.com/matplotlib/matplotlib/_apis/build/status/matplotlib.matplotlib?branchName=master
+.. _AzurePipelines: https://dev.azure.com/matplotlib/matplotlib/_build/latest?definitionId=1&amp;branchName=master</p>
+<p>.. |AppVeyor| image:: https://ci.appveyor.com/api/projects/status/github/matplotlib/matplotlib?branch=master&amp;svg=true
+.. _AppVeyor: https://ci.appveyor.com/project/matplotlib/matplotlib</p>
+<p>.. |Codecov| image:: https://codecov.io/github/matplotlib/matplotlib/badge.svg?branch=master&amp;service=github
+.. _Codecov: https://codecov.io/github/matplotlib/matplotlib?branch=master</p>
+<p>.. |LGTM| image:: https://img.shields.io/lgtm/grade/python/g/matplotlib/matplotlib.svg?logo=lgtm&amp;logoWidth=18
+.. _LGT…</p>
+<p>地址：<a class="reference external" href="https://github.com/matplotlib/matplotlib">https://github.com/matplotlib/matplotlib</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-argusswift-yolov4-pytorch">
+<h2>🤩Python随身听-技术精选： /argusswift/YOLOv4-pytorch<a class="headerlink" href="#python-argusswift-yolov4-pytorch" title="Permalink to this headline">¶</a></h2>
+<p>👉This is a pytorch repository of YOLOv4, attentive YOLOv4 and mobilenet YOLOv4 with PASCAL VOC and COCO</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">yolov4,object-detection,pytorch,senet,cbam,mobilenetv2,mobilenetv3,attention</span></code></p>
+<p>⭐️STARS：437, 今日上升数↑:35</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="yolov4-pytorch-attentive-yolov4-and-mobilenetv3-yolov4">
+<h2>YOLOv4-pytorch (attentive YOLOv4 and Mobilenetv3 YOLOv4)<a class="headerlink" href="#yolov4-pytorch-attentive-yolov4-and-mobilenetv3-yolov4" title="Permalink to this headline">¶</a></h2>
+<p>This is a PyTorch re-implementation of YOLOv4 architecture based on the official darknet implementation <a class="reference external" href="https://github.com/AlexeyAB/darknet">AlexeyAB/darknet</a> with PASCAL VOC, COCO and Customer dataset</p>
+<div class="section" id="results-updating">
+<h3>Results(updating)<a class="headerlink" href="#results-updating" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>name</p></th>
+<th class="text-align:left head"><p>train Dataset</p></th>
+<th class="text-align:left head"><p>test Dataset</p></th>
+<th class="text-align:left head"><p>test size</p></th>
+<th class="text-align:left head"><p>mAP</p></th>
+<th class="text-align:left head"><p>inference time(ms)</p></th>
+<th class="text-align:left head"><p>params(M)</p></th>
+<th class="text-align:left head"><p>model link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>mobilenetv2-YOLOV4</p></td>
+<td class="text-align:left"><p>VOC trainval(07+12)</p></td>
+<td class="text-align:left"><p>VOC test(07)</p></td>
+<td class="text-align:left"><p>416</p></td>
+<td class="text-align:left"><p>0.851</p></td>
+<td class="text-align:left"><p>11.29</p></td>
+<td class="text-align:left"><p>46.34</p></td>
+<td class="text-align:left"><p><a class="reference external" href="https://pan.baidu.com/s/10cAzQLHZmPxpHyCsNncV_w">model</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="update">
+<h3>Update!!!<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h3>
+<p>Mobilenetv3-YOLOv4 is arriving!（You only need to change the MODEL_TYPE in config/yolov4_config.py）</p>
+</div>
+<div class="section" id="news">
+<h3>News!!!<a class="headerlink" href="#news" title="Permalink to this headline">¶</a></h3>
+<p>This repo add some useful attention methods in backbone.The following pictures illustrate such thing:</p>
+<ul class="simple">
+<li><p>SEnet(CVPR 2017)</p></li>
+<li><p>CBAM(CVPR 2018)</p></li>
+</ul>
+</div>
+<div class="section" id="highlights">
+<h3>Highlights<a class="headerlink" href="#highlights" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="yolov4-attentive-yolov4-and-mobilenet-yolov4-with-some-useful-module">
+<h4>YOLOv4 (attentive YOLOv4 and Mobilenet-YOLOv4) with some useful module<a class="headerlink" href="#yolov4-attentive-yolov4-and-mobilenet-yolov4-with-some-useful-module" title="Permalink to this headline">¶</a></h4>
+<p>This repo is simple to use,easy to read and uncompli…</p>
+<p>地址：<a class="reference external" href="https://github.com/argusswift/YOLOv4-pytorch">https://github.com/argusswift/YOLOv4-pytorch</a></p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-google-research-bert">
+<h2>🤩Python随身听-技术精选： /google-research/bert<a class="headerlink" href="#python-google-research-bert" title="Permalink to this headline">¶</a></h2>
+<p>👉TensorFlow code and pre-trained models for BERT</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">nlp,google,natural-language-processing,natural-language-understanding,tensorflow</span></code></p>
+<p>⭐️STARS：25134, 今日上升数↑:17</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="bert">
+<h2>BERT<a class="headerlink" href="#bert" title="Permalink to this headline">¶</a></h2>
+<p><strong>***** New March 11th, 2020: Smaller BERT Models *****</strong></p>
+<p>This is a release of 24 smaller BERT models (English only, uncased, trained with WordPiece masking) referenced in <a class="reference external" href="https://arxiv.org/abs/1908.08962">Well-Read Students Learn Better: On the Importance of Pre-training Compact Models</a>.</p>
+<p>We have shown that the standard BERT recipe (including model architecture and training objective) is effective on a wide range of model sizes, beyond BERT-Base and BERT-Large. The smaller BERT models are intended for environments with restricted computational resources. They can be fine-tuned in the same manner as the original BERT models. However, they are most effective in the context of knowledge distillation, where the fine-tuning labels are produced by a larger and more accurate teacher.</p>
+<p>Our goal is to enable research in institutions with fewer computational resources and encourage the community to seek directions of innovation alternative to increasing model capacity.</p>
+<p>You can download all 24 fro…</p>
+<p>地址：<a class="reference external" href="https://github.com/google-research/bert">https://github.com/google-research/bert</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-bridgecrewio-checkov">
+<h2>🤩Python随身听-技术精选： /bridgecrewio/checkov<a class="headerlink" href="#python-bridgecrewio-checkov" title="Permalink to this headline">¶</a></h2>
+<p>👉Prevent cloud misconfigurations during build-time for Terraform, Cloudformation, Kubernetes, Serverless framework and other infrastructure-as-code-languages with Checkov by Bridgecrew.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">terraform,static-analysis,aws,gcp,azure,bridgecrew,aws-security,azure-security,gcp-security,cloudformation,checkov,scans,misconfigurations,compliance,kubernetes,kubernetes-security</span></code></p>
+<p>⭐️STARS：1392, 今日上升数↑:17</p>
+<p>👉README：</p>
+<p><strong>Checkov</strong> is a static code analysis tool for infrastructure-as-code.</p>
+<p>It scans cloud infrastructure provisioned using <a class="reference external" href="https://terraform.io/">Terraform</a>, <a class="reference external" href="https://aws.amazon.com/cloudformation/">Cloudformation</a>, <a class="reference external" href="https://kubernetes.io/">Kubernetes</a>, <a class="reference external" href="https://www.serverless.com/">Serverless</a> or <a class="reference external" href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview">ARM Templates</a> and detects security and compliance misconfigurations.</p>
+<p>Checkov also powers <a class="reference external" href="https://bridgecrew.io/?utm_source=github&amp;utm_medium=organic_oss&amp;utm_campaign=checkov"><strong>Bridgecrew</strong></a>, the developer-first platform that codifies and streamlines cloud security throughout the development lifecycle. Bridgecrew identifies, fixes, and prevents misconfigurations in cloud resources and infrastructure-as-code files.</p>
+<a href="https://www.bridgecrew.cloud/login/signUp/?utm_campaign=checkov-github-repo&utm_source=github.com&utm_medium=get-started-button" title="Try_Bridgecrew">
+    <img src="https://dabuttonfactory.com...
+<p>地址：<a class="reference external" href="https://github.com/bridgecrewio/checkov">https://github.com/bridgecrewio/checkov</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-lyhue1991-eat-pytorch-in-20-days">
+<h2>🤩Python随身听-技术精选： /lyhue1991/eat_pytorch_in_20_days<a class="headerlink" href="#python-lyhue1991-eat-pytorch-in-20-days" title="Permalink to this headline">¶</a></h2>
+<p>👉Pytorch🍊🍉   is delicious, just eat it! 😋😋</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">pytorch,tensorflow2-pytorch</span></code></p>
+<p>⭐️STARS：1588, 今日上升数↑:19</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="how-to-eat-pytorch-in-20-days">
+<h2>How to eat Pytorch in 20 days ?🔥🔥<a class="headerlink" href="#how-to-eat-pytorch-in-20-days" title="Permalink to this headline">¶</a></h2>
+<p><strong>《20天吃掉那只Pytorch》</strong></p>
+<ul class="simple">
+<li><p>🚀 github项目地址: https://github.com/lyhue1991/eat_pytorch_in_20_days</p></li>
+<li><p>🐳 和鲸专栏地址: https://www.kesci.com/home/column/5f2ac5d8af3980002cb1bc08 【代码可直接fork后云端运行，无需配置环境】</p></li>
+</ul>
+<p><strong>《30天吃掉那只TensorFlow2》</strong></p>
+<ul class="simple">
+<li><p>🚀 github项目地址: https://github.com/lyhue1991/eat_tensorflow2_in_30_days</p></li>
+<li><p>🐳 和鲸专栏地址: https://www.kesci.com/home/column/5d8ef3c3037db3002d3aa3a0 【代码可直接fork后云端运行，无需配置环境】</p></li>
+</ul>
+<details><summary>Original</summary>
+<div class="section" id="pytorch-or-tensorflow2">
+<h3>一， Pytorch🔥  or TensorFlow2 🍎<a class="headerlink" href="#pytorch-or-tensorflow2" title="Permalink to this headline">¶</a></h3>
+<p>先说结论:</p>
+<p><strong>如果是工程师，应该优先选TensorFlow2.</strong></p>
+<p><strong>如果是学生或者研究人员，应该优先选择Pytorch.</strong></p>
+<p><strong>如果时间足够，最好TensorFlow2和Pytorch都要学习掌握。</strong></p>
+<p>理由如下：</p>
+<ul class="simple">
+<li><p>1，<strong>在工业界最重要的是模型落地，目前国内的大部分互联网企业只支持TensorFlow模型的在线部署，不支持Pytorch。</strong> 并且工业界更加注重的是模型的高可用性，许多时候使用的都是成熟的模型架构，调试需求并不大。</p></li>
+<li><p>2，<strong>研究人员最重要的是快速迭代发表文章，需要尝试一些较新的模型架构。而Pytorch在易用性上相比TensorFlow2有一些优势，更加方便调试。</strong> 并且在2019年以来在学术界占领了大半壁江山，能够找到的相应最新研究成果更多。</p></li>
+<li><p>3，TensorFlow2和Pytorch实际上整体风格已经非常相似了，学会了其中一个，学习另外一个将比较容易。两种框架都掌握的话，能够参考的开源模型案例更多，并且可以方便地在两种框架之间切换。</p></li>
+</ul>
+<p>本书的TensorFlow镜像教程：</p>
+<div class="section" id="tensorflow2-https-github-com-lyhue1991">
+<h4>🍊《30天吃掉那只TensorFlow2》：https://github.com/lyhue1991…<a class="headerlink" href="#tensorflow2-https-github-com-lyhue1991" title="Permalink to this headline">¶</a></h4>
+<p>地址：<a class="reference external" href="https://github.com/lyhue1991/eat_pytorch_in_20_days">https://github.com/lyhue1991/eat_pytorch_in_20_days</a></p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-slundberg-shap">
+<h2>🤩Python随身听-技术精选： /slundberg/shap<a class="headerlink" href="#python-slundberg-shap" title="Permalink to this headline">¶</a></h2>
+<p>👉A game theoretic approach to explain the output of any machine learning model.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">interpretability,machine-learning,deep-learning,gradient-boosting,shap,shapley,explainability</span></code></p>
+<p>⭐️STARS：10382, 今日上升数↑:17</p>
+<p>👉README：</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/slundberg/shap/master/docs/artwork/shap_header.png" width="800" />
+</p>
+<p><a href="https://travis-ci.org/slundberg/shap"><img src="https://travis-ci.org/slundberg/shap.svg?branch=master"></a></p>
+<p><strong>SHAP (SHapley Additive exPlanations)</strong> is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions (see <a class="reference external" href="#citations">papers</a> for details and citations).</p>
+<!--**SHAP (SHapley Additive exPlanations)** is a unified approach to explain the output of any machine learning model. SHAP connects game theory with local explanations, uniting several previous methods [1-7] and representing the only possible consistent and locally accurate additive feature attribution method based on expectations (see our [papers](#citations) for details and citations).-->
+<div class="section" id="install">
+<h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
+<p>Shap can be installed from either …</p>
+<p>地址：<a class="reference external" href="https://github.com/slundberg/shap">https://github.com/slundberg/shap</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-hardikkamboj-an-introduction-to-statistical-learning">
+<h2>🤩Python随身听-技术精选： /hardikkamboj/An-Introduction-to-Statistical-Learning<a class="headerlink" href="#python-hardikkamboj-an-introduction-to-statistical-learning" title="Permalink to this headline">¶</a></h2>
+<p>👉This repository contains the exercises and its solution contained in the book An Introduction to Statistical Learning</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">datascience,machine-learning,statistical-learning,python</span></code></p>
+<p>⭐️STARS：160, 今日上升数↑:13</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="an-introduction-to-statistical-learning">
+<h2><a class="reference external" href="http://faculty.marshall.usc.edu/gareth-james/ISL/">An-Introduction-to-Statistical-Learning</a><a class="headerlink" href="#an-introduction-to-statistical-learning" title="Permalink to this headline">¶</a></h2>
+<p>This repository contains the exercises and its solution contained in the book An Introduction to Statistical Learning</p>
+<p>An-Introduction-to-Statistical-Learning is one of the most popular books among data scientists to learn the conepts and intuitions behind
+machine learning algorithms, however, the exercises are implemented in R language, which is a hinderence for all those who are using python
+language. To overcome this i have tried solving all the questions in practical exerices in Python language, so people using python language
+can also get the most our of this amazing book. Along with that i have also provided the solutions for conceptual questions.
+I had tried my best to write the correct solutions to the problem, It was a challenge, and i need to learn to do a lot of research. I do not gurantee that all the solutions are
+absoletely correct. I have commented the notebooks.
+If you find any query, do send a fe…</p>
+<p>地址：<a class="reference external" href="https://github.com/hardikkamboj/An-Introduction-to-Statistical-Learning">https://github.com/hardikkamboj/An-Introduction-to-Statistical-Learning</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-jantic-deoldify">
+<h2>🤩Python随身听-技术精选： /jantic/DeOldify<a class="headerlink" href="#python-jantic-deoldify" title="Permalink to this headline">¶</a></h2>
+<p>👉A Deep Learning based project for colorizing and restoring old images (and video!)</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：11688, 今日上升数↑:17</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="deoldify">
+<h2>DeOldify<a class="headerlink" href="#deoldify" title="Permalink to this headline">¶</a></h2>
+<p><strong>Quick Start</strong>: The easiest way to colorize images using DeOldify (for free!) is here: <a class="reference external" href="https://deepai.org/machine-learning-model/colorizer">DeOldify Image Colorization on DeepAI</a></p>
+<p>The <strong>most advanced</strong> version of DeOldify image colorization is available here, exclusively.  Try a few images for free! <a class="reference external" href="https://www.myheritage.com/incolor">MyHeritiage In Color</a></p>
+<p>Image (artistic) <a class="reference external" href="https://colab.research.google.com/github/jantic/DeOldify/blob/master/ImageColorizerColab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" align="center"></a> |
+Video <a class="reference external" href="https://colab.research.google.com/github/jantic/DeOldify/blob/master/VideoColorizerColab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" align="center"></a></p>
+<p><strong>NEW</strong> Having trouble with the default image colorizer, aka “artistic”?  Try the “stable” one below.  It generally won’t produce colors that are as interesting as “artistic”, but the glitches are noticeably reduced.</p>
+<p>Image (stable) [&lt;img src=”https://co…</p>
+<p>地址：<a class="reference external" href="https://github.com/jantic/DeOldify">https://github.com/jantic/DeOldify</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-pierian-data-complete-python-3-bootcamp">
+<h2>🤩Python随身听-技术精选： /Pierian-Data/Complete-Python-3-Bootcamp<a class="headerlink" href="#python-pierian-data-complete-python-3-bootcamp" title="Permalink to this headline">¶</a></h2>
+<p>👉Course Files for Complete Python 3 Bootcamp Course on Udemy</p>
+<p>😎TOPICS: ``</p>
+<p>⭐️STARS：12344, 今日上升数↑:15</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="complete-python-3-bootcamp">
+<h2>Complete-Python-3-Bootcamp<a class="headerlink" href="#complete-python-3-bootcamp" title="Permalink to this headline">¶</a></h2>
+<p>Course Files for Complete Python 3 Bootcamp Course on Udemy</p>
+<p>Get it now for …</p>
+<p>地址：<a class="reference external" href="https://github.com/Pierian-Data/Complete-Python-3-Bootcamp">https://github.com/Pierian-Data/Complete-Python-3-Bootcamp</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-eladrich-pixel2style2pixel">
+<h2>🤩Python随身听-技术精选： /eladrich/pixel2style2pixel<a class="headerlink" href="#python-eladrich-pixel2style2pixel" title="Permalink to this headline">¶</a></h2>
+<p>👉Official Implementation for “Encoding in Style: a StyleGAN Encoder for Image-to-Image Translation”</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">image-translation,stylegan,generative-adversarial-network,stylegan-encoder</span></code></p>
+<p>⭐️STARS：108, 今日上升数↑:31</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="encoding-in-style-a-stylegan-encoder-for-image-to-image-translation">
+<h2>Encoding in Style: a StyleGAN Encoder for Image-to-Image Translation<a class="headerlink" href="#encoding-in-style-a-stylegan-encoder-for-image-to-image-translation" title="Permalink to this headline">¶</a></h2>
+<p><a href="https://arxiv.org/abs/2008.00951"><img src="https://img.shields.io/badge/arXiv-2008.00951-b31b1b.svg"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a></p>
+<blockquote>
+<div><p>We present a generic image-to-image translation framework, Pixel2Style2Pixel (pSp). Our pSp framework is based on a novel encoder network that directly generates a series of style vectors which are fed into a pretrained StyleGAN generator, forming the extended W+ latent space. We first show that our encoder can directly embed real images into W+, with no additional optimization. We further introduce a dedicated identity loss which is shown to achieve improved performance in the reconstruction of an input image. We demonstrate pSp to be a simple architecture that, by leveraging a well-trained, fixed generator network, can be easily applied on a wide-range of image-to-image translation tasks. Solving these t…</p>
+</div></blockquote>
+<p>地址：<a class="reference external" href="https://github.com/eladrich/pixel2style2pixel">https://github.com/eladrich/pixel2style2pixel</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="python-dragen1860-deep-learning-with-tensorflow-book">
+<h2>🤩Python随身听-技术精选： /dragen1860/Deep-Learning-with-TensorFlow-book<a class="headerlink" href="#python-dragen1860-deep-learning-with-tensorflow-book" title="Permalink to this headline">¶</a></h2>
+<p>👉深度学习入门开源书，基于TensorFlow 2.0案例实战。Open source Deep Learning book, based on TensorFlow 2.0 framework.</p>
+<p>😎TOPICS: <code class="docutils literal notranslate"><span class="pre">tensorflow,tensorflow2,deeplearning,machinelearning,python,pytorch,book,opensource</span></code></p>
+<p>⭐️STARS：10220, 今日上升数↑:14</p>
+<p>👉README：</p>
+</div>
+<div class="section" id="tensorflow-2-0">
+<h2>TensorFlow 2.0深度学习开源书(龙书)<a class="headerlink" href="#tensorflow-2-0" title="Permalink to this headline">¶</a></h2>
+<p>基于TensorFlow 2.0正式版！！！
+理论与实战结合，非常适合入门学习！！！</p>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://item.jd.com/12954866.html">纸质书购买链接：京东</a></strong></p></li>
+<li><p><strong><a class="reference external" href="https://detail.tmall.com/item.htm?spm=a230r.1.14.16.18b460abi8w8jJ&amp;id=625801924474&amp;ns=1&amp;abbucket=9">纸质书购买链接：淘宝</a></strong></p></li>
+</ul>
+<p>本仓库包含pdf电子书、配套源代码、配套课件等。部分代码已替换为Ipython Notebook形式，感谢这位<a class="reference external" href="https://github.com/Relph1119/deeplearning-with-tensorflow-notes">童鞋</a>的整理。</p>
+<p><a class="reference external" href="https://pan.baidu.com/s/1GgQjhDqSgSfjxqBMsE3RDQ">百度网盘下载</a>  提取码：juqs</p>
+<ul class="simple">
+<li><p><strong>本书被“机器之心”，“量子位”等权威媒体报导！</strong></p></li>
+<li><p><strong>本库在Github趋势日榜单连续多天全球排名第1！</strong></p></li>
+</ul>
+<p align="center">
+  <img src="assets/book-cover.png" align="center" width="600">
+  <!-- <img src="assets/1.png" align="center" width="600"> -->
+</p>
+<ul class="simple">
+<li><p>提交错误或者修改等反馈意见，请在Github <a class="reference external" href="https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book/issues">Issues</a>页面提交</p></li>
+<li><p>联系邮箱(一般问题建议Github issues交流)：liangqu.long AT gmail.com</p></li>
+<li><p>高校老师索取PPT原素材等教案，请邮箱联系，并详注院校课程等信息，一般2天内发送邮件回复</p></li>
+<li><p>使用本书本的任何内容时(<strong>仅限非商业用途</strong>)，请注明作者和Github链接</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>合作院校<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>以下高校已采用本书作为专业教材或参考资料，欢迎更多高校加入！发送邮件即可索取PPT教案。</p>
+<p>| &lt;img src=”assets/xbgydx.jpg” width=”2…</p>
+<p>地址：<a class="reference external" href="https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book">https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book</a></p>
+<hr class="docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="2020-10-07.html" title="previous page">Python随身听-2020-10-07-技术精选</a>
+    <a class='right-next' id="next-link" href="2020-10-09.html" title="next page">Python随身听-2020-10-09-技术精选</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By DE8UG<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            更多内容与问题讨论请到「Python随身听」<image width=80 src="https://upload.jianshu.io/users/qrcodes/543964/%E5%BE%AE%E4%BF%A1-%E7%AC%AC8%E5%93%A5.jpg">
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="my_static/js/index.js"></script>
+    
+  </body>
+</html>
